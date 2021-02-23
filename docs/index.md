@@ -3,6 +3,7 @@ Welcome!
 
 ## Overview
 Today, CodeSee consists of a few pieces. As part of your install, you will:
+
 * run a local CodeSee server (see docker-compose instructions below)
 * add two npm libraries to your javascript app:
   * a CodeSee babel plugin (@codesee/babel-plugin-instrument), which instruments your code to send data to the CodeSee server
@@ -110,7 +111,8 @@ Currently, this option allows the following libraries:
 
 
 
-# If you'd like CodeSee to run on the backend, CodeSee needs to start recording immediately. This is how:
+# Running CodeSee on the Backend
+If you'd like CodeSee to run on the backend, CodeSee needs to start recording immediately. This is how:
 
 Two options, either:
  - set the env variable `CODESEE_RECORD_ON_START` to `true`

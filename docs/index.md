@@ -11,8 +11,8 @@ Today, CodeSee consists of a few pieces. As part of your install, you will:
   
 You will be able to create CodeSee recordings of your app so long as you have the CodeSee server running, and have the CodeSee babel plugin as part of your babel setup.
 
-# Installation
-## Account Setup
+## Installation
+### Account Setup
 1. Get access to docker codeseeio/app_node, make sure to have Docker installed, and that you are logged in.
 1. Get access to github.com/codesee-io/codesee-alpha, and git clone it locally. We recommend putting this repo *outside* of your app directory. For example:
 

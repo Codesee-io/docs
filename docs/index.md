@@ -41,16 +41,16 @@ From now on, you can run `docker-compose up` in the codesee-alpha directory anyt
    - If you are using yarn, run: `yarn add --dev @codesee/tracker@0.10.1 @codesee/babel-plugin-instrument@0.10.1`
 
 
-### CodeSee configuration for specific projects/environments
+## CodeSee configuration for specific projects/environments
 1. If you are not using any of the listed projects/environments, skip to the generic set up instructions
 
-## Configuring CodeSee with Create React App
+### Configuring CodeSee with Create React App
 
-### Add React App Rewired
+**Add React App Rewired**
 
 Add [React App Rewired](https://github.com/timarney/react-app-rewired#how-to-rewire-your-create-react-app-project) to your project as described.
 
-### Add CodeSee to config-overrides.js
+**Add CodeSee to config-overrides.js**
 
 You should have created a `config-overrides.js` file in your project's root
 directory as part of the React App Rewired install. Add the following to it:
@@ -69,15 +69,15 @@ module.exports = function override(config, env) {
 }
 ```
 
-## Configuring CodeSee with Babel and Typescript
+### Configuring CodeSee with Babel and Typescript
 In these instructions, we will set up a parallel build system using babel so that your existing flow will be unchanged. You will be able to continue to use `tsc` to compile and run your typescript files the same as you've always done. We will add new "build:codesee" and "run:codesee" commands to your package.json specifically for CodeSee. They will build your project and put the resulting artifacts into the /codesee directory.
 
-### Install Packages
+**Install Packages**
 We need to install the packages needed for babel. This will allow us to convert your typescript code into javascript using babel.
    - for npm: `npm install --save-dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
    - for yarn: `yarn add --dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
 
-### Configure Babel
+**Configure Babel**
 In the root of your project, create a `.babelrc` file with the following:
 ```
 {
@@ -93,7 +93,7 @@ In the root of your project, create a `.babelrc` file with the following:
 }
 ```
 
-### Create the `build` and `start` script commands
+**Create the `build` and `start` script commands**
 Add the following line to the "scripts" section of your `package.json`.
 
 `"build:codesee": "./node_modules/.bin/babel ./src --out-dir ./codesee --extensions '.ts' --source-maps inline",`
@@ -121,7 +121,7 @@ Change it to:
 }
 ```
 
-### Test it out
+**Test it out**
 Reminder, we have *not* installed CodeSee. Only Babel. 
 
 Let's try out our new babel-based build system. Try:
@@ -136,14 +136,14 @@ For yarn:
 
 And your program should be running the same as it always has.
 
-### Tidying up
+**Tidying up**
 You'll probably want to add `codesee/` to your `.gitignore` file, so you don't accidentally commit any of the babel build products from the /codesee directory.
 
-## Configuring CodeSee with Nuxt.js
+### Configuring CodeSee with Nuxt.js
 
 You'll need to edit your `nuxt.config.js` to make sure the "codesee" babel plugin is included when in development mode.
 
-### 1. If you haven't already, store your config in a variable named `config`.
+**1. If you haven't already, store your config in a variable named `config`.**
 That is, change from:
 
 Before (in your `nuxt.config.js`)
@@ -162,8 +162,8 @@ const config = {
 export default config;
 ```
 
-### 2. Add the following, which will ensure CodeSee runs when your app is run in development mode
-The new code goes just before the `export default config;` line.
+**2. Add the following, which will ensure CodeSee runs when your app is run in development mode
+The new code goes just before the `export default config;` line.**
 
 In your `nuxt.config.js`:
 ```
@@ -180,15 +180,15 @@ if (process.env.NODE_ENV !== 'production') {
 
 export default config;
 ```
-## Configuring CodeSee with Storybook
+### Configuring CodeSee with Storybook
 This configuration uses a custom storybook preset, which should be compatible with Storybook version 4.0.0 or newer.
 
-### Place codesee-storybook-preset.js in your .storybook directory
+**Place codesee-storybook-preset.js in your .storybook directory**
 
 Copy `storybook/codesee-storybook-preset.js` from the codesee-alpha repository
 into your `.storybook` directory.
 
-### Add the preset to addons in main.js
+**Add the preset to addons in main.js**
 
 You should have a `main.js` in your `.storybook` directory.
 
@@ -221,14 +221,14 @@ module.exports = {
   ],
 }
 ```
-## Ember installation instructions
+### Ember installation instructions
 
-WARNING: Ember support is very early and experimental. At this point, we've only tested on a couple of relatively simple apps. If you are willing to give this a shot on your codebase, we would love to hear about your experience so we can continue to improve support.
+**WARNING:** Ember support is very early and experimental. At this point, we've only tested on a couple of relatively simple apps. If you are willing to give this a shot on your codebase, we would love to hear about your experience so we can continue to improve support.
 
 We'll need to modify your babel config, and import `@codesee/tracker` both which we can do in the `ember-cli-build.js` file.  Here is an example structure that should work well for your app. Note that:
 1. We detect development mode
-1. We construct an object that is our babel options, and pass that into the EmberApp constructor. We add the @codesee/instrument babel plugin to those options with the `frameworks: ["ember"]` option, but only in development mode.
-1. We use `app.import` to load the `@codesee/tracker` npm package, but only in development mode
+2. We construct an object that is our babel options, and pass that into the EmberApp constructor. We add the @codesee/instrument babel plugin to those options with the `frameworks: ["ember"]` option, but only in development mode.
+3. We use `app.import` to load the `@codesee/tracker` npm package, but only in development mode
 
 ```
 module.exports = function (defaults) { 

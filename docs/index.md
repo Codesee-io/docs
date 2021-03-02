@@ -127,12 +127,14 @@ Reminder, we have *not* installed CodeSee. Only Babel.
 Let's try out our new babel-based build system. Try:
 
 For npm:
-- `npm run build:codesee`
-- `npm run start:codesee`
+
+* `npm run build:codesee`
+* `npm run start:codesee`
 
 For yarn:
-- `yarn build:codesee`
-- `yarn start:codesee`
+
+* `yarn build:codesee`
+* `yarn start:codesee`
 
 And your program should be running the same as it always has.
 

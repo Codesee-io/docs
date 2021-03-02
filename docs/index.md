@@ -6,8 +6,8 @@ Today, CodeSee consists of a few pieces. As part of your install, you will:
 
 * run a local CodeSee server (see docker-compose instructions below)
 * add two npm libraries to your javascript app:
-  * a CodeSee babel plugin (@codesee/babel-plugin-instrument), which instruments your code to send data to the CodeSee server
-  * the CodeSee Tracker library (@codesee/tracker), which actually sends the data to the CodeSee server
+    * a CodeSee babel plugin (@codesee/babel-plugin-instrument), which instruments your code to send data to the CodeSee server
+    * the CodeSee Tracker library (@codesee/tracker), which actually sends the data to the CodeSee server
   
 You will be able to create CodeSee recordings of your app so long as you have the CodeSee server running, and have the CodeSee babel plugin as part of your babel setup.
 

@@ -4,41 +4,17 @@ Welcome!
 ## Overview
 Today, CodeSee consists of a few pieces. As part of your install, you will:
 
-* run a local CodeSee server (see docker-compose instructions below)
 * add two npm libraries to your javascript app:
     * a CodeSee babel plugin (@codesee/babel-plugin-instrument), which instruments your code to send data to the CodeSee server
     * the CodeSee Tracker library (@codesee/tracker), which actually sends the data to the CodeSee server
-  
-You will be able to create CodeSee recordings of your app so long as you have the CodeSee server running, and have the CodeSee babel plugin as part of your babel setup.
 
-## Installation
-### Account Setup
-1. Get access to docker codeseeio/app_node, make sure to have Docker installed, and that you are logged in.
-1. Get access to github.com/codesee-io/codesee-alpha, and git clone it locally. We recommend putting this repo *outside* of your app directory. For example:
-
-- src/
-  - my-app/
-  - codesee-alpha/
-
-```
-git clone git@github.com:Codesee-io/codesee-alpha.git --depth=1
-```
-
-## CodeSee Server Setup
-1. From the local, cloned codesee-alpha directory, run docker compose:
-   `docker-compose up`
-1. Wait for postgres to report it's ready to receive requests, then hit Control C to stop the server
-1. When you're ready, run `docker-compose up` and your CodeSee server should be good to go. You'll know everything is working when you see the message: `server started at http://localhost:5198`
-
-From now on, you can run `docker-compose up` in the codesee-alpha directory anytime to start up the CodeSee server, and \<ctrl\>+c to bring the server back down.
-
-
+You will be able to create CodeSee recordings of your app as long as you have the CodeSee babel plugin as part of your babel setup.
 
 ## Preparing your javascript app for CodeSee
 ### General instructions for CodeSee setup
 1. From the root of your app, install the two codesee npm packages:
-   - If you are using npm, run: `npm install --save-dev @codesee/tracker@0.10.1 @codesee/babel-plugin-instrument@0.10.1`
-   - If you are using yarn, run: `yarn add --dev @codesee/tracker@0.10.1 @codesee/babel-plugin-instrument@0.10.1`
+   - If you are using npm, run: `npm install --save-dev @codesee/tracker@0.13.1 @codesee/babel-plugin-instrument@0.13.1`
+   - If you are using yarn, run: `yarn add --dev @codesee/tracker@0.13.1 @codesee/babel-plugin-instrument@0.13.1`
 
 
 ## CodeSee configuration for specific projects/environments
@@ -62,7 +38,7 @@ module.exports = function override(config, env) {
   // add CodeSee babel plugin
   if (env === 'development') {
     const babelLoaderConfig = config.module.rules[1].oneOf[2];
-    babelLoaderConfig.options.plugins.push("@codesee/instrument");
+    babelLoaderConfig.options.plugins.push(["@codesee/instrument", { hosted: true }]);
   }
 
   return config;
@@ -88,7 +64,7 @@ In the root of your project, create a `.babelrc` file with the following:
   "plugins": [
     "@babel/proposal-class-properties",
     "@babel/proposal-object-rest-spread",
-    /* "@codesee/instrument" */ /* later, we will uncomment "@codesee/instrument" to introduce CodeSee instrumentation */
+    /* ["@codesee/instrument", { hosted: true }] */ /* later, we will uncomment "@codesee/instrument" to introduce CodeSee instrumentation */
   ]
 }
 ```
@@ -122,7 +98,7 @@ Change it to:
 ```
 
 **Test it out**
-Reminder, we have *not* installed CodeSee. Only Babel. 
+Reminder, we have *not* installed CodeSee. Only Babel.
 
 Let's try out our new babel-based build system. Try:
 
@@ -173,7 +149,7 @@ In your `nuxt.config.js`:
 if (process.env.NODE_ENV !== 'production') {
   const babel = config.build.babel = config.build.babel || {};
   const plugins = babel.plugins = babel.plugins || [];
-  plugins.push('@codesee/instrument');
+  plugins.push(['@codesee/instrument', { hosted: true }]);
 
   const render = config.render = config.render || {};
   const bundleRenderer = render.bundleRenderer = render.bundleRenderer || {};
@@ -233,24 +209,24 @@ We'll need to modify your babel config, and import `@codesee/tracker` both which
 3. We use `app.import` to load the `@codesee/tracker` npm package, but only in development mode
 
 ```
-module.exports = function (defaults) { 
+module.exports = function (defaults) {
   const isDevelopment = process.env.EMBER_ENV === 'development';
-  
+
   let babel = {
     /* If you have any existing babel configuration, move it here */
-  }; 
-  
+  };
+
   // Adds CodeSee instrumentation, but only in development mode
   if (isDevelopment) {
     babel.plugins ||= [];
-    babel.plugins.push( ["@codesee/instrument", {frameworks: ["ember"]}] );
+    babel.plugins.push( ["@codesee/instrument", { hosted: true, frameworks: ["ember"]}] );
   }
 
-  let app = new EmberApp(defaults, { 
+  let app = new EmberApp(defaults, {
     babel,
     /* Any additional EmberApp configuration for your app goes here */
   });
-  
+
   // Loads CodeSee, but only when in development mode
   if (isDevelopment) {
     app.import('node_modules/@codesee/tracker/build/codesee.js');
@@ -270,13 +246,13 @@ module.exports = function (defaults) {
   "env": {
     "development": {
       "plugins": [
-        "@codesee/instrument",
+        ['@codesee/instrument', { hosted: true }],
         /* ... other dev plugins ... */
       ]
     },
   }
 ```
-If your project does not include a .babelrc file and you have a webpack.config.js file instead, you can add the `"@codesee/instrument"`, to this file. Look for an options block where your babel settings, presets and plugins are being declared. Please add `"@codesee/instrument"` to the list of your project's plugins as in the example below.
+If your project does not include a .babelrc file and you have a webpack.config.js file instead, you can add the `['@codesee/instrument', { hosted: true }]`, to this file. Look for an options block where your babel settings, presets and plugins are being declared. Please add `['@codesee/instrument', { hosted: true }]` to the list of your project's plugins as in the example below.
 
 ```
    options: {
@@ -284,7 +260,7 @@ If your project does not include a .babelrc file and you have a webpack.config.j
         //your project's babel presets go here
       ],
       plugins: [
-        "@codesee/instrument",
+        ['@codesee/instrument', { hosted: true }],
         //other babel plugins go here
       ],
     },
@@ -308,14 +284,14 @@ TROUBLESHOOTING ADVICE: If it appears that nothing has changed, your application
 
 
 ## CodeSee options
-We will be adding configuration options over time. Today, there is only a single one: `includeLibs`. 
+We will be adding configuration options over time. Today, there is only a single one: `includeLibs`.
 
 **`includeLibs`**
 By default, CodeSee avoids instrumenting library code imported into your app. However, if you would like to see CodeSee data flows that include your framework, we are beginning to support that. Add the `includeLibs` option to the @codesee/instrument plugin config like so:
 
 ```
     plugins: [
-      ["@codesee/instrument", {"includeLibs": ["gatsby"]}],
+      ["@codesee/instrument", {"hosted": true, "includeLibs": ["gatsby"]}],
       <other plugins>
     ]
 ```

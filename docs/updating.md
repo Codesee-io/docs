@@ -1,4 +1,3 @@
-# Updating to the latest version
 WARNING: If you are updating from pre-0.7.0, this update will erase all your existing recordings. We do apologize! We will do our best to avoid this in the future.
 
 1. In your local codesee-alpha directory, `git pull` the latest changes from this repo

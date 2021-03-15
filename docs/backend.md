@@ -1,4 +1,3 @@
-## Running CodeSee on the Backend
 If you'd like CodeSee to run on the backend, CodeSee needs to start recording immediately. This is how:
 
 Two options, either:

@@ -15,9 +15,14 @@ You will be able to create CodeSee recordings of your app as long as you have th
 
 ## Preparing your javascript app for CodeSee
 ### General instructions for CodeSee setup
-1. From the root of your app, install the two codesee npm packages:
-   - If you are using npm, run: `npm install --save-dev @codesee/tracker@0.13.1 @codesee/babel-plugin-instrument@0.13.1`
-   - If you are using yarn, run: `yarn add --dev @codesee/tracker@0.13.1 @codesee/babel-plugin-instrument@0.13.1`
+
+#### `npm`
+
+     npm install --save-dev @codesee/tracker@0.13.1 @codesee/babel-plugin-instrument@0.13.1
+
+#### `yarn`
+
+     yarn add --dev @codesee/tracker@0.13.1 @codesee/babel-plugin-instrument@0.13.1
 
 
 ## CodeSee configuration for specific projects/environments
@@ -166,7 +171,7 @@ This configuration uses a custom storybook preset, which should be compatible wi
 
 **Place codesee-storybook-preset.js in your .storybook directory**
 
-Copy `storybook/codesee-storybook-preset.js` from the codesee-alpha repository
+Copy [`storybook/codesee-storybook-preset.js`](https://github.com/Codesee-io/codesee-alpha/blob/main/storybook/codesee-storybook-preset.js) from the codesee-alpha repository
 into your `.storybook` directory.
 
 **Add the preset to addons in main.js**
@@ -242,7 +247,7 @@ module.exports = function (defaults) {
 };
 ```
 
-## Generic babel setup instructions if your environment is not listed above
+### Generic babel setup instructions if your environment is not listed above
 1. If you don't have [babel compilation](https://babeljs.io/) setup in your app, you will need to add it. Please use [Babel's excellent guide](https://babeljs.io/setup) for getting set-up in your specific environments.
 1. Once you've added your babel setup, add the "codesee" plugin for development. For example, if you have a .babelrc file, add the following to "env":
 ```

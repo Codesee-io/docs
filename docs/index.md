@@ -247,6 +247,13 @@ module.exports = function (defaults) {
 };
 ```
 
+### Gatsby
+
+1. You will need to follow [the instructions](https://www.gatsbyjs.com/docs/how-to/custom-configuration/babel/) for adding a `.babelrc` to your gatsby build if you have not already.
+2. Once you've done that, you follow step #2 in the generic babel setup instructions below.
+
+**You must use Gatsby 2.25.x+ or Gatsby 3.x+ in order to use CodeSee.**
+
 ### Generic babel setup instructions if your environment is not listed above
 1. If you don't have [babel compilation](https://babeljs.io/) setup in your app, you will need to add it. Please use [Babel's excellent guide](https://babeljs.io/setup) for getting set-up in your specific environments.
 1. Once you've added your babel setup, add the "codesee" plugin for development. For example, if you have a .babelrc file, add the following to "env":

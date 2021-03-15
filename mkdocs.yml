@@ -1,4 +1,8 @@
-site_name: CodeSee Alpha
+site_name: CodeSee Beta
+nav:
+  - Getting Started: index.md
+  - Running CodeSee on the Backend: backend.md
+  - Updating to the latest version: updating.md
 theme:
   name: material
 

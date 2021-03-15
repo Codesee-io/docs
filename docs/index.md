@@ -1,7 +1,8 @@
 # Getting Started
-Welcome! This is what CodeSee is.
 
-SIGN UP HERE
+CodeSee helps development teams visually understand how your large scale codebase works, document it and collaborate continuously.
+
+Before proceeding with setup, you can sign up for a CodeSee account [here](https://app.codesee.io/register).
 
 ## Overview
 Today, CodeSee consists of a few pieces. As part of your install, you will:

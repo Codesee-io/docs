@@ -58,8 +58,12 @@ In these instructions, we will set up a parallel build system using babel so tha
 
 **Install Packages**
 We need to install the packages needed for babel. This will allow us to convert your typescript code into javascript using babel.
-   - for npm: `npm install --save-dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
-   - for yarn: `yarn add --dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
+
+#### npm
+    npm install --save-dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
+
+#### yarn
+    yarn add --dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
 
 **Configure Babel**
 In the root of your project, create a `.babelrc` file with the following:
@@ -81,7 +85,8 @@ In the root of your project, create a `.babelrc` file with the following:
 Add the following line to the "scripts" section of your `package.json`.
 
 `"build:codesee": "./node_modules/.bin/babel ./src --out-dir ./codesee --extensions '.ts' --source-maps inline",`
-Note: replace `./src` with the top-level directory where your source code is stored.
+
+> Note: replace `./src` with the top-level directory where your source code is stored.
 
 Now, make a copy the script command you normally use to run your project (often called `start`), name the copy `start:codesee` and modify it to look in the `/codesee` directory for your source code. For example if you normally have:
 
@@ -106,16 +111,17 @@ Change it to:
 ```
 
 **Test it out**
+
 Reminder, we have *not* installed CodeSee. Only Babel.
 
 Let's try out our new babel-based build system. Try:
 
-For npm:
+#### npm
 
 * `npm run build:codesee`
 * `npm run start:codesee`
 
-For yarn:
+#### yarn
 
 * `yarn build:codesee`
 * `yarn start:codesee`
@@ -123,6 +129,7 @@ For yarn:
 And your program should be running the same as it always has.
 
 **Tidying up**
+
 You'll probably want to add `codesee/` to your `.gitignore` file, so you don't accidentally commit any of the babel build products from the /codesee directory.
 
 ### Configuring CodeSee with Nuxt.js
@@ -207,7 +214,15 @@ module.exports = {
   ],
 }
 ```
-### Ember installation instructions
+
+### Configuring CodeSee with Gatsby
+
+1. You will need to follow [the instructions](https://www.gatsbyjs.com/docs/how-to/custom-configuration/babel/) for adding a `.babelrc` to your gatsby build if you have not already.
+2. Once you've done that, you follow step #2 in the generic babel setup instructions below.
+
+**You must use Gatsby 2.25.x+ or Gatsby 3.x+ in order to use CodeSee.**
+
+### Ember installation instructions (experimental!)
 
 **WARNING:** Ember support is very early and experimental. At this point, we've only tested on a couple of relatively simple apps. If you are willing to give this a shot on your codebase, we would love to hear about your experience so we can continue to improve support.
 
@@ -247,13 +262,6 @@ module.exports = function (defaults) {
 };
 ```
 
-### Gatsby
-
-1. You will need to follow [the instructions](https://www.gatsbyjs.com/docs/how-to/custom-configuration/babel/) for adding a `.babelrc` to your gatsby build if you have not already.
-2. Once you've done that, you follow step #2 in the generic babel setup instructions below.
-
-**You must use Gatsby 2.25.x+ or Gatsby 3.x+ in order to use CodeSee.**
-
 ### Generic babel setup instructions if your environment is not listed above
 1. If you don't have [babel compilation](https://babeljs.io/) setup in your app, you will need to add it. Please use [Babel's excellent guide](https://babeljs.io/setup) for getting set-up in your specific environments.
 1. Once you've added your babel setup, add the "codesee" plugin for development. For example, if you have a .babelrc file, add the following to "env":
@@ -283,19 +291,3 @@ If your project does not include a .babelrc file and you have a webpack.config.j
 
 **Did it work?**
 1. Re-build your app and you should see the CodeSee eye icon towards the top right of your screen. Then you can celebrate!
-
-## CodeSee options
-We will be adding configuration options over time. Today, there is only a single one: `includeLibs`.
-
-**`includeLibs`**
-By default, CodeSee avoids instrumenting library code imported into your app. However, if you would like to see CodeSee data flows that include your framework, we are beginning to support that. Add the `includeLibs` option to the @codesee/instrument plugin config like so:
-
-```
-    plugins: [
-      ["@codesee/instrument", {"hosted": true, "includeLibs": ["gatsby"]}],
-      <other plugins>
-    ]
-```
-
-Currently, this option allows the following libraries:
-- "gatsby"

@@ -1,8 +1,10 @@
 site_name: CodeSee Beta
 nav:
   - Getting Started: index.md
+  - Running CodeSee locally: local.md
   - Running CodeSee on the Backend: backend.md
   - Updating to the latest version: updating.md
+  - Extra options: options.md
 theme:
   name: material
 

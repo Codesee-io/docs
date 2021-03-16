@@ -16,14 +16,20 @@ You will be able to create CodeSee recordings of your app as long as you have th
 ## Preparing your javascript app for CodeSee
 ### General instructions for CodeSee setup
 
-#### `npm`
+<details><summary>npm</summary>
 
+```
      npm install --save-dev @codesee/tracker@0.13.1 @codesee/babel-plugin-instrument@0.13.1
+```
 
-#### `yarn`
+</details>
+<details><summary>yarn</summary>
 
+```
      yarn add --dev @codesee/tracker@0.13.1 @codesee/babel-plugin-instrument@0.13.1
 
+```
+</details>
 
 ## CodeSee configuration for specific projects/environments
 1. If you are not using any of the listed projects/environments, skip to the generic set up instructions
@@ -36,8 +42,12 @@ Add [React App Rewired](https://github.com/timarney/react-app-rewired#how-to-rew
 
 **Add CodeSee to config-overrides.js**
 
+The configuration differs slightly based on the version of Create React App you are running.
+
 You should have created a `config-overrides.js` file in your project's root
-directory as part of the React App Rewired install. Add the following to it:
+directory as part of the React App Rewired install. Edit this file and add one of the following:
+
+<details><summary>Version 4.x.x</summary>
 
 ```
 const webpack = require("webpack");
@@ -46,12 +56,32 @@ module.exports = function override(config, env) {
   // add CodeSee babel plugin
   if (env === 'development') {
     const babelLoaderConfig = config.module.rules[1].oneOf[2];
-    babelLoaderConfig.options.plugins.push(["@codesee/instrument", { hosted: true }]);
+    babelLoaderConfig.options.plugins.push("@codesee/instrument");
   }
 
   return config;
 }
 ```
+
+</details>
+
+<details><summary>Version 3.x.x and 2.x.x</summary>
+
+```
+const webpack = require("webpack");
+
+module.exports = function override(config, env) {
+  // add CodeSee babel plugin
+  if (env === 'development') {
+    const babelLoaderConfig = config.module.rules[2].oneOf[1];
+    babelLoaderConfig.options.plugins.push("@codesee/instrument");
+  }
+
+  return config;
+}
+```
+
+</details>
 
 ### Configuring CodeSee with Babel and Typescript
 In these instructions, we will set up a parallel build system using babel so that your existing flow will be unchanged. You will be able to continue to use `tsc` to compile and run your typescript files the same as you've always done. We will add new "build:codesee" and "run:codesee" commands to your package.json specifically for CodeSee. They will build your project and put the resulting artifacts into the /codesee directory.
@@ -59,11 +89,17 @@ In these instructions, we will set up a parallel build system using babel so tha
 **Install Packages**
 We need to install the packages needed for babel. This will allow us to convert your typescript code into javascript using babel.
 
-#### npm
+<details><summary>npm</summary>
+```
     npm install --save-dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
+```
+</details>
 
-#### yarn
+<details><summary>yarn</summary>
+```
     yarn add --dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
+```
+</details>
 
 **Configure Babel**
 In the root of your project, create a `.babelrc` file with the following:
@@ -116,15 +152,27 @@ Reminder, we have *not* installed CodeSee. Only Babel.
 
 Let's try out our new babel-based build system. Try:
 
-#### npm
+<details><summary>npm</summary>
 
-* `npm run build:codesee`
-* `npm run start:codesee`
+```
+npm run build:codesee
+```
+```
+npm run start:codesee
+```
 
-#### yarn
+</details>
 
-* `yarn build:codesee`
-* `yarn start:codesee`
+<details><summary>yarn</summary>
+
+```
+yarn build:codesee
+```
+```
+yarn start:codesee
+```
+
+</details>
 
 And your program should be running the same as it always has.
 

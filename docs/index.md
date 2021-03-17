@@ -32,7 +32,13 @@ You will be able to create CodeSee recordings of your app as long as you have th
 </details>
 
 ## CodeSee configuration for specific projects/environments
-1. If you are not using any of the listed projects/environments, skip to the generic set up instructions
+We have specific instructions for certain projects and environment. If you are not using any of the following projects/environments, skip to the generic set up instructions:
+- Create React App
+- Typescript, but without Babel
+- Nuxt
+- Storybook
+- Gatsby
+- Ember
 
 ### Configuring CodeSee with Create React App
 
@@ -83,7 +89,7 @@ module.exports = function override(config, env) {
 
 </details>
 
-### Configuring CodeSee with Babel and Typescript
+### Configuring CodeSee with a Typescript project that doesn't use Babel
 In these instructions, we will set up a parallel build system using babel so that your existing flow will be unchanged. You will be able to continue to use `tsc` to compile and run your typescript files the same as you've always done. We will add new "build:codesee" and "run:codesee" commands to your package.json specifically for CodeSee. They will build your project and put the resulting artifacts into the /codesee directory.
 
 **Install Packages**
@@ -112,7 +118,7 @@ In the root of your project, create a `.babelrc` file with the following:
   "plugins": [
     "@babel/proposal-class-properties",
     "@babel/proposal-object-rest-spread",
-    /* ["@codesee/instrument", { hosted: true }] */ /* later, we will uncomment "@codesee/instrument" to introduce CodeSee instrumentation */
+    ["@codesee/instrument", { hosted: true }]
   ]
 }
 ```
@@ -148,9 +154,7 @@ Change it to:
 
 **Test it out**
 
-Reminder, we have *not* installed CodeSee. Only Babel.
-
-Let's try out our new babel-based build system. Try:
+Let's try out our new babel-based build system for codesee. Try:
 
 <details><summary>npm</summary>
 
@@ -174,7 +178,7 @@ yarn start:codesee
 
 </details>
 
-And your program should be running the same as it always has.
+And your program should be running the same as always, but with a purple CodeSee eye on the page as well.
 
 **Tidying up**
 
@@ -265,10 +269,21 @@ module.exports = {
 
 ### Configuring CodeSee with Gatsby
 
-1. You will need to follow [the instructions](https://www.gatsbyjs.com/docs/how-to/custom-configuration/babel/) for adding a `.babelrc` to your gatsby build if you have not already.
-2. Once you've done that, you follow step #2 in the generic babel setup instructions below.
+**CodeSee is compatible with Gatsby 2.25.x+ or Gatsby 3.x.+**
 
-**You must use Gatsby 2.25.x+ or Gatsby 3.x+ in order to use CodeSee.**
+1. You will need to follow [the instructions](https://www.gatsbyjs.com/docs/how-to/custom-configuration/babel/) for adding a `.babelrc` to your gatsby build if you have not already.
+2. Once you've done that, add the "codesee" plugin for development. Add the following to the "env" -> "development" part of your config ("env" goes at the top level):
+```
+  "env": {
+    "development": {
+      "plugins": [
+        ['@codesee/instrument', { hosted: true }],
+        /* ... other dev plugins ... */
+      ]
+    },
+  }
+```
+
 
 ### Ember installation instructions (experimental!)
 
@@ -312,7 +327,7 @@ module.exports = function (defaults) {
 
 ### Generic babel setup instructions if your environment is not listed above
 1. If you don't have [babel compilation](https://babeljs.io/) setup in your app, you will need to add it. Please use [Babel's excellent guide](https://babeljs.io/setup) for getting set-up in your specific environments.
-1. Once you've added your babel setup, add the "codesee" plugin for development. For example, if you have a .babelrc file, add the following to "env":
+1. Once you've added your babel setup, add the "codesee" plugin for development. For example, if you have a .babelrc file, add the following to the "env" -> "development" part of your config ("env" goes at the top level):
 ```
   "env": {
     "development": {

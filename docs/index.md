@@ -19,14 +19,14 @@ You will be able to create CodeSee recordings of your app as long as you have th
 <details><summary>npm</summary>
 
 ```
-     npm install --save-dev @codesee/tracker@0.13.1 @codesee/babel-plugin-instrument@0.13.1
+     npm install --save-dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
 ```
 
 </details>
 <details><summary>yarn</summary>
 
 ```
-     yarn add --dev @codesee/tracker@0.13.1 @codesee/babel-plugin-instrument@0.13.1
+     yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
 
 ```
 </details>

@@ -33,6 +33,7 @@ You will be able to create CodeSee recordings of your app as long as you have th
 
 ## CodeSee configuration for specific projects/environments
 We have specific instructions for certain projects and environment. If you are not using any of the following projects/environments, skip to the generic set up instructions:
+
 - Create React App
 - Typescript, but without Babel
 - Nuxt

@@ -81,7 +81,7 @@ Alter this text to add `{hosted: true}` to your CodeSee plugin. If `“@codesee/
 
 ## 3. Reset localStorage
 
-If you're updating from a version of CodeSee with local storage to hosted, you'll next need to open your application in your browser, making sure that the CodeSee floating action button is visible:
+You'll next need to clear `localStorage`. Open your application in your browser, making sure that the CodeSee floating action button is visible:
 
 ![CodeSee button running in web app](img/codesee_button.png)
 

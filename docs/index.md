@@ -230,8 +230,20 @@ This configuration uses a custom storybook preset, which should be compatible wi
 
 **Place codesee-storybook-preset.js in your .storybook directory**
 
-Copy [`storybook/codesee-storybook-preset.js`](https://github.com/Codesee-io/codesee-alpha/blob/main/storybook/codesee-storybook-preset.js) from the codesee-alpha repository
-into your `.storybook` directory.
+Copy the following into a new file called `codesee-storybook-preset.js`
+inside your `.storybook` directory:
+
+```
+module.exports = {
+  babel: async (config, options) => {
+    if (options.configType === "DEVELOPMENT") {
+      const plugins = config.plugins = config.plugins || [];
+      plugins.push("@codesee/instrument");
+    }
+    return config;
+  }
+};
+```
 
 **Add the preset to addons in main.js**
 

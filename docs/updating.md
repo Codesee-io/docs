@@ -2,10 +2,30 @@
 
 You'll need to upgrade your version of CodeSee in slightly different ways, depending on what file your Babel intergration is in.
 
-While this process will not delete any previous CodeSee recordings, you'll need to switch back to the local hosted option to access recordings previously recorded with CodeSee local.
+While this process will not delete any previous CodeSee recordings, you'll need to switch back to the local hosted option to access recordings previously recorded with CodeSee Local.
 
-## Updating with Create React App
-If you're using CodeSee with a Create React App application, you'll make these changes in the config-overrides.js file. Before updating, your config-overrides.js file should look something like this:
+## 1. Updating the CodeSee dependencies
+
+Update the devDependencies in your `packages.json` file to reflect the current CodeSee version. You can run either of these commands to update:
+
+<details><summary>npm</summary>
+
+```
+npm install --save-dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
+```
+
+</details>
+<details><summary>yarn</summary>
+
+```
+yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
+```
+</details>
+
+## 2. Update the CodeSee tooling declaration
+
+### Updating with Create React App
+If you're using CodeSee with a Create React App application, you'll make these changes in the `config-overrides.js` file. Before updating, your `config-overrides.js` file should look something like this:
 
 ```
 module.exports = function override(config, env) {
@@ -18,7 +38,7 @@ module.exports = function override(config, env) {
 }
 ```
 
-Alter this text to add {hosted: true} to your CodeSee plugin as shown below.
+Alter this text to add `{hosted: true}` to your CodeSee plugin. If `“@codesee/instrument”` is not currently wrapped in its own array in your file, you will need to do so, as shown below. If it is already wrapped in its own array as shown here `[“@codesee/instrument”]`, please add `{hosted: true}` to the array as shown below.
 
 ```
 module.exports = function override(config, env) {
@@ -30,31 +50,9 @@ module.exports = function override(config, env) {
   return config;
 }
 ```
+### Updating other application types
 
-
-Next, update the devDependencies in your packages.json file to reflect the current CodeSee version. The most recent version of CodeSee is 0.17.0. Once updated, your code should look like this.
-
-
-``` 
-    "@codesee/babel-plugin-instrument": "0.17.0",
-    "@codesee/tracker": "0.17.0"
-``` 
-
-If you're updating from a version of CodeSee with local storage to hosted, you'll next need to open your application in your browser, making sure that the CodeSee floating action button is visible.
-
-Right click on any point of your application in your browser and select inspect, to open Chrome developement tools.
-
-Click on the Application option in your Chrome development tools. Then navigate to your local storage option in the left hand navigation menu.
-
-Look for http://localhost:5198, right click on it and choose clear.
-
-
-
-## Updating other application types
-
-First we'll need to set your version of CodeSee to hosted.
-
-Navigate to the file that you've added your CodeSee plugin to. You can search for “@codesee/instrument” to quickly find the correct file. For example, if you've added CodeSee to your .babelrc file, open your .babelrc file. Your .babelrc file should contain text that looks similar to this.
+Navigate to the file that you've added your CodeSee plugin to. You can search for `"@codesee/instrument"` to quickly find the correct file. For example, if you've added CodeSee to your `.babelrc` file, open your `.babelrc` file. It should contain text that looks similar to this.
 
 
 ```
@@ -68,11 +66,9 @@ Navigate to the file that you've added your CodeSee plugin to. You can search fo
   }
 ```
 
-Alter this text to add {hosted: true} to your CodeSee plugin as shown below.
+Alter this text to add `{hosted: true}` to your CodeSee plugin. If `“@codesee/instrument”` is not currently wrapped in its own array in your file, you will need to do so, as shown below. If it is already wrapped in its own array as shown here `[“@codesee/instrument”]`, please add `{hosted: true}` to the array as shown below.
 
-If “@codesee/instrument” is not currently wrapped in its own array in your file, you will need to do so, as shown below. If it is already wrapped in its own array as shown here [“@codesee/instrument”], please add {hosted: true} to the array as shown below.
-
-```  
+```
   "env": {
     "development": {
       "plugins": [
@@ -83,21 +79,17 @@ If “@codesee/instrument” is not currently wrapped in its own array in your f
   }
 ```
 
+## 3. Reset localStorage
 
+If you're updating from a version of CodeSee with local storage to hosted, you'll next need to open your application in your browser, making sure that the CodeSee floating action button is visible:
 
-
-Next, let's update your version of CodeSee to the latest release. You can do this npm by typing [add from instructions]. Or via yarn using ['add from other instructions']
-
-Next, open your application in your browser, making sure that the CodeSee floating action button is visible.
-['show a screenshot of an application open with an arrow to the floating action button']
+![CodeSee button running in web app](img/codesee_button.png)
 
 Right click on any point of your application in your browser and select inspect, to open Chrome developement tools.
 
 Click on the Application option in your Chrome development tools. Then navigate to your local storage option in the left hand navigation menu.
-['include screenshot with arrows']
 
-Look for http://localhost:5198, right click on it and choose clear.
+Look for `http://localhost:5198`, right click on it and choose clear:
 
-
-
+![Resetting local storage in Chrome DevTools](img/remove_local_storage.png)
 

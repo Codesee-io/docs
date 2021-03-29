@@ -19,15 +19,14 @@ You will be able to create CodeSee recordings of your app as long as you have th
 <details><summary>npm</summary>
 
 ```
-     npm install --save-dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
+npm install --save-dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
 ```
 
 </details>
 <details><summary>yarn</summary>
 
 ```
-     yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
-
+yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
 ```
 </details>
 
@@ -98,13 +97,13 @@ We need to install the packages needed for babel. This will allow us to convert 
 
 <details><summary>npm</summary>
 ```
-    npm install --save-dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
+npm install --save-dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
 ```
 </details>
 
 <details><summary>yarn</summary>
 ```
-    yarn add --dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
+yarn add --dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
 ```
 </details>
 

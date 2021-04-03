@@ -20,7 +20,8 @@ Once installed, whenever you run your app in development and view it in your bro
 A few thoughts to help you on your CodeSee journey:
 
 - Keep recordings as short as possible -- focus on the one thing you want to understand better.
-- When you stop recording, CodeSee will try to open a new tab with your recording in it shortly. For larger recordings or on slower networks, there can be some buffering, so please give it a few seconds or more to finish sending the recording to our servers.
+- When you finish recording, CodeSee will open a new tab with your recording in it as soon as all the data has been transmitted. For larger recordings or on slower networks, there can be some buffering, so please give it a few seconds or more to finish sending the recording to our servers.
+  - If it delays for long enough, your pop-up blocker may decide to block it. Keep an eye out for that if the codesee site isn't coming up. If in doubt, you can always go to [app.codesee.io/library](app.codesee.io/library) to see all your latest recordings.
 - The CodeSee UI can be a little sluggish with larger recordings! Sorry about that! For the moment, we ask that you give our UI a second to process now and then. But fear not, we take performance very seriously and we're actively working on performance improvements.
 
 
@@ -383,11 +384,14 @@ A few thoughts to help you on your CodeSee journey:
 - If the CodeSee icon is in a red circle then you're not logged in. Click it to log into CodeSee.
 - If the CodeSee icon is in a purple circle, you're ready to go! Click it to start recording, interact with your app, then click it again to stop recording.
 - Keep recordings as short as possible -- focus on the one thing you want to understand better.
-- When you stop recording, CodeSee will try to open a new tab with your recording in it shortly. For larger recordings or on slower networks, there can be some buffering, so please give it a few seconds or more to finish sending the recording to our servers.
+- When you finish recording, CodeSee will open a new tab with your recording in it as soon as all the data has been transmitted. For larger recordings or on slower networks, there can be some buffering, so please give it a few seconds or more to finish sending the recording to our servers.
+  - If it delays for long enough, your pop-up blocker may decide to block it. Keep an eye out for that if the codesee site isn't coming up. If in doubt, you can always go to [app.codesee.io/library](app.codesee.io/library) to see all your latest recordings.
 - The CodeSee UI can be a little sluggish with larger recordings! Sorry about that! For the moment, we ask that you give our UI a second to process now and then. But fear not, we take performance very seriously and we're actively working on performance improvements.
 
-
 ## Compatibility / Troubleshooting
+### We're here to help!
+If there's anything you need, or you just want to tell us what you think, please don't hesitate to reach out to us at support@codesee.io
+
 ### Browsers
 Currently, for CodeSee to work properly, you'll need to be running your application in Chrome.
 

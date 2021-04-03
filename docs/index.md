@@ -2,16 +2,27 @@
 
 CodeSee helps development teams visually understand how your large scale codebase works, document it and collaborate continuously.
 
-Before proceeding with setup, you can sign up for a CodeSee account [here](https://app.codesee.io/register).
+**CodeSee is early beta software**, so thank you so much for trying it out, and please let us know (support@codesee.io) what you think, or how we can help!
 
 ## Overview
-Today, CodeSee consists of a few pieces. As part of your install, you will:
+By integrating CodeSee with your app, you will be able to make and view recordings of the innerworkings of your Javascript or Typescript application.
 
-* add two npm libraries to your javascript app:
-    * a CodeSee babel plugin `@codesee/babel-plugin-instrument`, which instruments your code to send data to the CodeSee server
-    * the CodeSee Tracker library `@codesee/tracker`, which actually sends the data to the CodeSee server
+In the instructions below, we will:
 
-You will be able to create CodeSee recordings of your app as long as you have the CodeSee babel plugin as part of your babel setup.
+1. Install two npm packages, and
+2. Configure babel so that CodeSee instruments your code when running in development
+
+Once installed, whenever you run your app in development and view it in your browser, you should see a circle with the CodeSee logo.
+
+- If it's red, click it to log into CodeSee
+- If it's purple, you're ready to go! Click it to start recording, interact with your app, then click it again to stop recording.
+
+A few thoughts to help you on your CodeSee journey:
+
+- Keep recordings as short as possible -- focus on the one thing you want to understand better.
+- When you stop recording, CodeSee will try to open a new tab with your recording in it shortly. For larger recordings or on slower networks, there can be some buffering, so please give it a few seconds or more to finish sending the recording to our servers.
+- The CodeSee UI can be a little sluggish with larger recordings! Sorry about that! For the moment, we ask that you give our UI a second to process now and then. But fear not, we take performance very seriously and we're actively working on performance improvements.
+
 
 ## Preparing your javascript app for CodeSee
 ### General instructions for CodeSee setup
@@ -31,7 +42,7 @@ yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
 </details>
 
 ## CodeSee configuration for specific projects/environments
-We have specific instructions for certain projects and environment. If you are not using any of the following projects/environments, skip to the generic set up instructions:
+We have specific instructions for certain projects and environments. If you are not using any of the following projects/environments, skip to the Generic Setup Instructions near the end of this doc:
 
 - Create React App
 - Typescript, but without Babel
@@ -337,7 +348,7 @@ module.exports = function (defaults) {
 };
 ```
 
-### Generic babel setup instructions if your environment is not listed above
+### Generic setup instructions (if your environment is not listed above)
 1. If you don't have [babel compilation](https://babeljs.io/) setup in your app, you will need to add it. Please use [Babel's excellent guide](https://babeljs.io/setup) for getting set-up in your specific environments.
 1. Once you've added your babel setup, add the "codesee" plugin for development. For example, if you have a .babelrc file, add the following to the "env" -> "development" part of your config ("env" goes at the top level):
 ```
@@ -364,5 +375,29 @@ If your project does not include a .babelrc file and you have a webpack.config.j
     },
 ```
 
-**Did it work?**
-1. Re-build your app and you should see the CodeSee eye icon towards the top right of your screen. Then you can celebrate!
+## Did it work?
+Re-build your app and you should see the CodeSee eye icon towards the top right of your screen. Then you can celebrate!
+
+A few thoughts to help you on your CodeSee journey:
+
+- If the CodeSee icon is in a red circle then you're not logged in. Click it to log into CodeSee.
+- If the CodeSee icon is in a purple circle, you're ready to go! Click it to start recording, interact with your app, then click it again to stop recording.
+- Keep recordings as short as possible -- focus on the one thing you want to understand better.
+- When you stop recording, CodeSee will try to open a new tab with your recording in it shortly. For larger recordings or on slower networks, there can be some buffering, so please give it a few seconds or more to finish sending the recording to our servers.
+- The CodeSee UI can be a little sluggish with larger recordings! Sorry about that! For the moment, we ask that you give our UI a second to process now and then. But fear not, we take performance very seriously and we're actively working on performance improvements.
+
+
+## Compatibility / Troubleshooting
+### Browsers
+Currently, for CodeSee to work properly, you'll need to be running your application in Chrome.
+
+### Third-Party Cookies
+Unfortunately, if third-party cookies are blocked, our authentication process does not work.
+
+If you have disabled cross-site cookies, you'll need to add the following to the "allow these sites to always use cookies" list in Chrome settings to get CodeSee to work:
+
+```
+app.codesee.io
+[*.]okta.com
+```
+

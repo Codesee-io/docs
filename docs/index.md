@@ -130,6 +130,7 @@ module.exports = function override(config, env) {
 +   "start": "react-app-rewired start",
 -   "build": "react-scripts build",
 +   "build": "react-app-rewired build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
 }
 ```

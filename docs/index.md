@@ -121,7 +121,7 @@ module.exports = function override(config, env) {
 |   +-- src
 ```
 
-#### 3) 'Flip' the existing calls to `react-scripts` in `npm` scripts for start, build and test
+#### 3) 'Flip' the existing calls to `react-scripts` in `npm` scripts for start and build
 ```diff
   /* package.json */
 

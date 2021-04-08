@@ -54,16 +54,25 @@ We have specific instructions for certain projects and environments. If you are 
 
 ### Configuring CodeSee with Create React App
 
-**Add React App Rewired**
+We're going to add [React App Rewired](https://github.com/timarney/react-app-rewired) following the instructions below. Please note that these instructions are slightly different than the ones on the react-app-rewired site. But, if you already have react-app-rewired installed, nothing to worry about here, you can skip to "Step 2) Create a config-overrides.js file".
 
-Add [React App Rewired](https://github.com/timarney/react-app-rewired#how-to-rewire-your-create-react-app-project) to your project as described.
+#### 1) Install react-app-rewired
 
-**Add CodeSee to config-overrides.js**
+##### For create-react-app 2.x with Webpack 4:
+
+```bash
+$ npm install react-app-rewired --save-dev
+```
+
+##### For create-react-app 1.x or react-scripts-ts with Webpack 3:
+
+```bash
+$ npm install react-app-rewired@1.6.2 --save-dev
+```
+
+#### 2) Create a `config-overrides.js` file in the root directory
 
 The configuration differs slightly based on the version of Create React App you are running.
-
-You should have created a `config-overrides.js` file in your project's root
-directory as part of the React App Rewired install. Edit this file and add one of the following:
 
 <details><summary>Version 4.x.x</summary>
 
@@ -100,6 +109,33 @@ module.exports = function override(config, env) {
 ```
 
 </details>
+
+
+```
++-- your-project
+|   +-- config-overrides.js
+|   +-- node_modules
+|   +-- package.json
+|   +-- public
+|   +-- README.md
+|   +-- src
+```
+
+#### 3) 'Flip' the existing calls to `react-scripts` in `npm` scripts for start and build
+```diff
+  /* package.json */
+
+  "scripts": {
+-   "start": "react-scripts start",
++   "start": "react-app-rewired start",
+-   "build": "react-scripts build",
++   "build": "react-app-rewired build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+}
+```
+
+Note: Please avoid setting this call for the `eject` and `test` scripts.
 
 ### Configuring CodeSee with a Typescript project that doesn't use Babel
 In these instructions, we will set up a parallel build system using babel so that your existing flow will be unchanged. You will be able to continue to use `tsc` to compile and run your typescript files the same as you've always done. We will add new "build:codesee" and "run:codesee" commands to your package.json specifically for CodeSee. They will build your project and put the resulting artifacts into the /codesee directory.

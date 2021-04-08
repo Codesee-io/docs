@@ -74,7 +74,7 @@ module.exports = function override(config, env) {
   // add CodeSee babel plugin
   if (env === 'development') {
     const babelLoaderConfig = config.module.rules[1].oneOf[2];
-    babelLoaderConfig.options.plugins.push("@codesee/instrument");
+    babelLoaderConfig.options.plugins.push(["@codesee/instrument", { hosted: true }]);
   }
 
   return config;
@@ -92,7 +92,7 @@ module.exports = function override(config, env) {
   // add CodeSee babel plugin
   if (env === 'development') {
     const babelLoaderConfig = config.module.rules[2].oneOf[1];
-    babelLoaderConfig.options.plugins.push("@codesee/instrument");
+    babelLoaderConfig.options.plugins.push(["@codesee/instrument", { hosted: true }]);
   }
 
   return config;
@@ -250,7 +250,7 @@ module.exports = {
   babel: async (config, options) => {
     if (options.configType === "DEVELOPMENT") {
       const plugins = config.plugins = config.plugins || [];
-      plugins.push("@codesee/instrument");
+      plugins.push(['@codesee/instrument', { hosted: true }]);
     }
     return config;
   }

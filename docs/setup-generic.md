@@ -27,4 +27,4 @@ If your project does not include a .babelrc file and you have a webpack.config.j
     },
 ```
 
-#### [Next step: Rebuild and run your app](/installation/#step-3-rebuild-and-run-your-app-locally)
+#### [Next step: Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)

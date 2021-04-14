@@ -27,16 +27,16 @@ yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
 ## Step 2: Configure your project for CodeSee
 Follow the links below to set up CodeSee for your specific project environment:
 
-- [**Create React App**](/setup-cra)
-- [**Typescript, but without Babel**](/setup-typescript-without-babel)
-- [**Nuxt**](/setup-nuxt)
-- [**Storybook**](/setup-storybook)
-- [**Gatsby**](/setup-gatsby)
-- [**Ember**](/setup-ember)
+- [**Create React App**](../setup-cra)
+- [**Typescript, but without Babel**](../setup-typescript-without-babel)
+- [**Nuxt**](../setup-nuxt)
+- [**Storybook**](../setup-storybook)
+- [**Gatsby**](../setup-gatsby)
+- [**Ember**](../setup-ember)
 
 Or, select generic setup if you use Next.js, Typescript with Babel, or another framework not listed above:
 
-- [**Generic setup**](/setup-generic)
+- [**Generic setup**](../setup-generic)
 
 ## Step 3: Rebuild and run your app locally
 Rebuild your app, wait a few seconds, and you should see the CodeSee eye icon towards the top right of your screen. Then you can celebrate!

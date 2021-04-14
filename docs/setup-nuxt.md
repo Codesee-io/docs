@@ -40,4 +40,4 @@ if (process.env.NODE_ENV !== 'production') {
 export default config;
 ```
 
-#### [Next step: Rebuild and run your app](/installation/#step-3-rebuild-and-run-your-app-locally)
+#### [Next step: Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)

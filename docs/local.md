@@ -24,5 +24,5 @@ From now on, you can run `docker-compose up` in the codesee-alpha directory anyt
 
 ## Setting up CodeSee on your codebase
 
-Please follow our instructions on [installing CodeSee](/installation), with the added
+Please follow our instructions on [installing CodeSee](../installation), with the added
 instruction of setting `hosted` to `false`, or removing the option entirely.

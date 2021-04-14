@@ -92,3 +92,5 @@ And your program should be running the same as always, but with a purple CodeSee
 **Tidying up**
 
 You'll probably want to add `codesee/` to your `.gitignore` file, so you don't accidentally commit any of the babel build products from the /codesee directory.
+
+#### [Next step: Rebuild and run your app](/installation/#step-3-rebuild-and-run-your-app-locally)

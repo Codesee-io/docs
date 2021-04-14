@@ -27,16 +27,16 @@ yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
 ## Step 2: Configure your project for CodeSee
 Follow the links below to set up CodeSee for your specific project environment:
 
-- <a href="/setup-cra" target="_blank">**Create React App**</a>
-- <a href="/setup-typescript-without-babel" target="_blank">**Typescript, but without Babel**</a>
-- <a href="/setup-nuxt" target="_blank">**Nuxt**</a>
-- <a href="/setup-storybook" target="_blank">**Storybook**</a>
-- <a href="/setup-gatsby" target="_blank">**Gatsby**</a>
-- <a href="/setup-ember" target="_blank">**Ember**</a>
+- [**Create React App**](/setup-cra)
+- [**Typescript, but without Babel**](/setup-typescript-without-babel)
+- [**Nuxt**](/setup-nuxt)
+- [**Storybook**](/setup-storybook)
+- [**Gatsby**](/setup-gatsby)
+- [**Ember**](/setup-ember)
 
 Or, select generic setup if you use Next.js, Typescript with Babel, or another framework not listed above:
 
-- <a href="/setup-generic" target="_blank">**Generic setup**</a>
+- [**Generic setup**](/setup-generic)
 
 ## Step 3: Rebuild and run your app locally
 Rebuild your app, wait a few seconds, and you should see the CodeSee eye icon towards the top right of your screen. Then you can celebrate!
@@ -47,7 +47,7 @@ A few thoughts to help you on your CodeSee journey:
 - If the CodeSee icon is in a purple circle, you're ready to go! Click it to start recording, interact with your app, then click it again to stop recording.
 - Keep recordings as short as possible -- focus on the one thing you want to understand better.
 - When you finish recording, CodeSee will open a new tab with your recording in it as soon as all the data has been transmitted. For larger recordings or on slower networks, there can be some buffering, so please give it a few seconds or more to finish sending the recording to our servers.
-- If it delays for long enough, your pop-up blocker may decide to block it. Keep an eye out for that if the codesee site isn't coming up. If in doubt, you can always go to [app.codesee.io/library](app.codesee.io/library) to see all your latest recordings.
+    - If it delays for long enough, your pop-up blocker may decide to block it. Keep an eye out for that if the codesee site isn't coming up. If in doubt, you can always go to [app.codesee.io/library](app.codesee.io/library) to see all your latest recordings.
 - The CodeSee UI can be a little sluggish with larger recordings! Sorry about that! For the moment, we ask that you give our UI a second to process now and then. But fear not, we take performance very seriously and we're actively working on performance improvements.
 
 ## Compatibility and troubleshooting

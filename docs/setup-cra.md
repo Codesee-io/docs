@@ -82,3 +82,5 @@ module.exports = function override(config, env) {
 ```
 
 Note: Please avoid setting this call for the `eject` and `test` scripts.
+
+#### [Next step: Rebuild and run your app](/installation/#step-3-rebuild-and-run-your-app-locally)

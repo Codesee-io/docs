@@ -37,3 +37,5 @@ module.exports = function (defaults) {
   return app.toTree();
 };
 ```
+
+#### [Next step: Rebuild and run your app](/installation/#step-3-rebuild-and-run-your-app-locally)

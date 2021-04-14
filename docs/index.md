@@ -2,7 +2,7 @@
 
 CodeSee helps development teams visually understand how your large scale codebase works, document it and collaborate continuously.
 
-**CodeSee is early beta software**, so thank you so much for trying it out, and please let us know (support@codesee.io) what you think, or how we can help!
+**CodeSee is early beta software**, so thank you so much for trying it out, and please let us know (<a href="mailto:support@codesee.io">support@codesee.io</a>) what you think, or how we can help!
 
 ## Get started with CodeSee
 By integrating CodeSee with your app, you will be able to make and view recordings of the inner workings of your Javascript or Typescript application.

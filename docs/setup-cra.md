@@ -92,3 +92,5 @@ Please change the `start` and `build` field to use `react-app-rewired` like this
 Note: Please avoid setting this call for the `eject` and `test` scripts.
 
 #### [Next step: Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)
+
+&nbsp;  

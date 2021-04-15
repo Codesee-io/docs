@@ -93,3 +93,4 @@ Look for `http://localhost:5198`, right click on it and choose clear:
 
 ![Resetting local storage in Chrome DevTools](img/remove_local_storage.png)
 
+&nbsp;  

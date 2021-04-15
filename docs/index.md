@@ -19,5 +19,5 @@ Once installed, whenever you run your app in development and view it in your bro
     - If it delays for long enough, your pop-up blocker may decide to block it. Keep an eye out for that if the codesee site isn't coming up. If in doubt, you can always go to [app.codesee.io/library](https://app.codesee.io/library) to see all your latest recordings.
 - The CodeSee UI can be a little sluggish with larger recordings! Sorry about that! For the moment, we ask that you give our UI a second to process now and then. But fear not, we take performance very seriously and we're actively working on performance improvements.
 
-## [Installing CodeSee](../installation)
+## [Next step: Installing CodeSee](../installation)
 &nbsp;  

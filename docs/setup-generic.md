@@ -7,13 +7,13 @@ Follow these instructions if your project doesn't use one of the other specific 
   "env": {
     "development": {
       "plugins": [
-        ['@codesee/instrument', { hosted: true }],
+        ["@codesee/instrument", { "hosted": true }],
         /* ... other dev plugins ... */
       ]
     },
   }
 ```
-If your project does not include a .babelrc file and you have a webpack.config.js file instead, you can add the `['@codesee/instrument', { hosted: true }]`, to this file. Look for an options block where your babel settings, presets and plugins are being declared. Please add `['@codesee/instrument', { hosted: true }]` to the list of your project's plugins as in the example below.
+If your project does not include a .babelrc file and you have a webpack.config.js file instead, you can add the `["@codesee/instrument", { "hosted": true }]`, to this file. Look for an options block where your babel settings, presets, and plugins are being declared. Please add `["@codesee/instrument", { "hosted": true }]` to the list of your project's plugins as in the example below.
 
 ```
    options: {
@@ -21,7 +21,7 @@ If your project does not include a .babelrc file and you have a webpack.config.j
         //your project's babel presets go here
       ],
       plugins: [
-        ['@codesee/instrument', { hosted: true }],
+        ["@codesee/instrument", { "hosted": true }],
         //other babel plugins go here
       ],
     },

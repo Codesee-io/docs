@@ -4,16 +4,10 @@ We're going to add [React App Rewired](https://github.com/timarney/react-app-rew
 
 #### 1) Install react-app-rewired
 
-##### For create-react-app 2.x with Webpack 4:
+CodeSee supports Create React App 2.x or newer. If you're not sure what version you are using, you can check your package.json for the react-scripts dependency: its version is the same as your Create React App version!
 
 ```bash
 $ npm install react-app-rewired --save-dev
-```
-
-##### For create-react-app 1.x or react-scripts-ts with Webpack 3:
-
-```bash
-$ npm install react-app-rewired@1.6.2 --save-dev
 ```
 
 #### 2) Create a `config-overrides.js` file in the root directory
@@ -67,15 +61,29 @@ module.exports = function override(config, env) {
 |   +-- src
 ```
 
-#### 3) 'Flip' the existing calls to `react-scripts` in `npm` scripts for start and build
-```diff
+#### 3) 'Flip' the calls to `react-scripts` in the `scripts` field of your `package.json`
+
+In your package.json, your current `scripts` field should *currently* look a lot like this:
+
+```
   /* package.json */
 
   "scripts": {
--   "start": "react-scripts start",
-+   "start": "react-app-rewired start",
--   "build": "react-scripts build",
-+   "build": "react-app-rewired build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+}
+```
+
+Please change the `start` and `build` field to use `react-app-rewired` like this:
+
+```
+  /* package.json */
+
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
 }

@@ -3,14 +3,14 @@ nav:
   - Overview: index.md
   - Installation:
     - Installing CodeSee: installation.md
-    - → Create React App: setup-cra.md
-    - → Typescript without Babel: setup-typescript-without-babel.md
-    - → Next: setup-next.md
-    - → Nuxt: setup-nuxt.md
-    - → Storybook: setup-storybook.md
-    - → Gatsby: setup-gatsby.md
-    - → Ember: setup-ember.md
-    - → Generic setup: setup-generic.md
+    - Create React App: setup-cra.md
+    - Typescript without Babel: setup-typescript-without-babel.md
+    - Next: setup-next.md
+    - Nuxt: setup-nuxt.md
+    - Storybook: setup-storybook.md
+    - Gatsby: setup-gatsby.md
+    - Ember: setup-ember.md
+    - Generic setup: setup-generic.md
     - Configuration options: options.md
   - Advanced setup:
     - Running CodeSee locally: local.md

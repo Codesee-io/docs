@@ -14,41 +14,38 @@ $ npm install react-app-rewired --save-dev
 
 The configuration differs slightly based on the version of Create React App you are running.
 
-<details><summary>Version 4.x.x</summary>
+=== "Version 4.x.x"
 
-```
-const webpack = require("webpack");
+    ```
+    const webpack = require("webpack");
 
-module.exports = function override(config, env) {
-  // add CodeSee babel plugin
-  if (env === 'development') {
-    const babelLoaderConfig = config.module.rules[1].oneOf[2];
-    babelLoaderConfig.options.plugins.push(["@codesee/instrument", { hosted: true }]);
-  }
+    module.exports = function override(config, env) {
+      // add CodeSee babel plugin
+      if (env === 'development') {
+        const babelLoaderConfig = config.module.rules[1].oneOf[2];
+        babelLoaderConfig.options.plugins.push(["@codesee/instrument", { hosted: true }]);
+      }
 
-  return config;
-}
-```
+      return config;
+    }
+    ```
 
-</details>
+=== "Version 3.x.x and 2.x.x"
 
-<details><summary>Version 3.x.x and 2.x.x</summary>
+    ```
+    const webpack = require("webpack");
 
-```
-const webpack = require("webpack");
+    module.exports = function override(config, env) {
+      // add CodeSee babel plugin
+      if (env === 'development') {
+        const babelLoaderConfig = config.module.rules[2].oneOf[1];
+        babelLoaderConfig.options.plugins.push(["@codesee/instrument", { hosted: true }]);
+      }
 
-module.exports = function override(config, env) {
-  // add CodeSee babel plugin
-  if (env === 'development') {
-    const babelLoaderConfig = config.module.rules[2].oneOf[1];
-    babelLoaderConfig.options.plugins.push(["@codesee/instrument", { hosted: true }]);
-  }
+      return config;
+    }
+    ```
 
-  return config;
-}
-```
-
-</details>
 
 
 ```

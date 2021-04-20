@@ -1,6 +1,6 @@
-#Upgrading to CodeSee Hosted
+#Changing from local to hosted CodeSee
 
-You'll need to upgrade your version of CodeSee in slightly different ways, depending on what file your Babel intergration is in.
+If you're running CodeSee locally but want to use the hosted option instead, you'll need to upgrade your version of CodeSee in slightly different ways, depending on what file your Babel intergration is in.
 
 While this process will not delete any previous CodeSee recordings, you'll need to switch back to the local hosted option to access recordings previously recorded with CodeSee Local.
 
@@ -8,19 +8,17 @@ While this process will not delete any previous CodeSee recordings, you'll need 
 
 Update the devDependencies in your `packages.json` file to reflect the current CodeSee version. You can run either of these commands to update:
 
-<details><summary>npm</summary>
+=== "npm"
 
-```
-npm install --save-dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
-```
+    ```
+    npm install --save-dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
+    ```
 
-</details>
-<details><summary>yarn</summary>
+=== "yarn"
 
-```
-yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
-```
-</details>
+    ```
+    yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
+    ```
 
 ## 2. Update the CodeSee tooling declaration
 

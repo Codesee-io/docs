@@ -10,19 +10,17 @@ Following the instructions below, you will:
 ## Step 1: Install the CodeSee package in your JavaScript or TypeScript app
 In the terminal, run the install command for your package manager:
 
-<details><summary>npm</summary>
+=== "npm"
 
-```
-npm install --save-dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
-```
+    ```
+    npm install --save-dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
+    ```
 
-</details>
-<details><summary>yarn</summary>
+=== "yarn"
 
-```
-yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
-```
-</details>
+    ```
+    yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
+    ```
 
 ## Step 2: Configure your project for CodeSee
 Follow the links below to set up CodeSee for your specific project environment:

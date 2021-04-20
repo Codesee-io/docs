@@ -1,24 +1,38 @@
 site_name: CodeSee Beta
 nav:
   - Overview: index.md
-  - Installing CodeSee: installation.md
-  - → Create React App: setup-cra.md
-  - → Next: setup-next.md
-  - → Nuxt: setup-nuxt.md
-  - → Storybook: setup-storybook.md
-  - → Gatsby: setup-gatsby.md
-  - → Typescript without Babel: setup-typescript-without-babel.md
-  - → Ember: setup-ember.md
-  - → Generic setup: setup-generic.md
-  - Running CodeSee locally: local.md
-  - Running CodeSee on the Backend: backend.md
-  - Upgrading to CodeSee Hosted: updating.md
-  - Extra options: options.md
+  - Installation:
+    - Installing CodeSee: installation.md
+    - → Create React App: setup-cra.md
+    - → Typescript without Babel: setup-typescript-without-babel.md
+    - → Next: setup-next.md
+    - → Nuxt: setup-nuxt.md
+    - → Storybook: setup-storybook.md
+    - → Gatsby: setup-gatsby.md
+    - → Ember: setup-ember.md
+    - → Generic setup: setup-generic.md
+    - Configuration options: options.md
+  - Advanced setup:
+    - Running CodeSee locally: local.md
+    - Running CodeSee on the Backend: backend.md
+    - Changing from local to hosted CodeSee: hosted.md
+  # - Using CodeSee:
+  #   - Quick start guide: extra.md
+  #   - Feature A: extra.md
+  #   - Feature B: extra.md
+  #   - Use cases: extra.md
+  # - Troubleshooting:
+  #   - Help with installing CodeSee: extra.md
 theme:
   name: material
+  favicon: img/favicon-32x32.png
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - attr_list
 extra:
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/codeseeio
 copyright: Copyright &copy; 2021 CodeSee Inc
-  
+

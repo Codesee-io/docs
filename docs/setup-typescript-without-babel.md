@@ -4,17 +4,17 @@ In these instructions, we will set up a parallel build system using babel so tha
 **Install Packages**
 We need to install the packages needed for babel. This will allow us to convert your typescript code into javascript using babel.
 
-<details><summary>npm</summary>
-```
-npm install --save-dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
-```
-</details>
+=== "npm"
 
-<details><summary>yarn</summary>
-```
-yarn add --dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
-```
-</details>
+    ```
+    npm install --save-dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
+    ```
+
+=== "yarn"
+
+    ```
+    yarn add --dev @babel/cli @babel/core @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread @babel/preset-env @babel/preset-typescript
+    ```
 
 **Configure Babel**
 In the root of your project, create a `.babelrc` file with the following:
@@ -65,27 +65,24 @@ Change it to:
 
 Let's try out our new babel-based build system for codesee. Try:
 
-<details><summary>npm</summary>
+=== "npm"
 
-```
-npm run build:codesee
-```
-```
-npm run start:codesee
-```
+    ```
+    npm run build:codesee
+    ```
+    ```
+    npm run start:codesee
+    ```
 
-</details>
+=== "yarn"
 
-<details><summary>yarn</summary>
+    ```
+    yarn build:codesee
+    ```
+    ```
+    yarn start:codesee
+    ```
 
-```
-yarn build:codesee
-```
-```
-yarn start:codesee
-```
-
-</details>
 
 And your program should be running the same as always, but with a purple CodeSee eye on the page as well.
 

@@ -45,7 +45,7 @@ module.exports = function override(config, env) {
   // add CodeSee babel plugin
   if (env === 'development') {
     const babelLoaderConfig = config.module.rules[1].oneOf[2];
-    babelLoaderConfig.options.plugins.push(["@codesee/instrument", {hosted: true}]);
+    babelLoaderConfig.options.plugins.push(["@codesee/instrument", {"hosted": true}]);
   }
   return config;
 }
@@ -73,7 +73,7 @@ Alter this text to add `{hosted: true}` to your CodeSee plugin. If `“@codesee/
     "development": {
       "plugins": [
         /* other plugins may be listed here */
-        ["@codesee/instrument", {hosted: true}]
+        ["@codesee/instrument", {"hosted": true}]
       ],
     }
   }

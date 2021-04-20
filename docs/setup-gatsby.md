@@ -8,7 +8,7 @@
   "env": {
     "development": {
       "plugins": [
-        ['@codesee/instrument', { hosted: true }],
+        ["@codesee/instrument", { "hosted": true }],
         /* ... other dev plugins ... */
       ]
     },

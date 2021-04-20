@@ -6,7 +6,9 @@ CodeSee helps development teams visually understand how your large scale codebas
 
 ## Get started with CodeSee
 
-![CodeSee button in browser](img/codesee_fab_in_browser.png){ align=right }
+<p class="block">
+  <img alt="CodeSee button in browser" src="img/codesee_fab_in_browser.png" align="right">
+</p>
 
 By integrating CodeSee with your app, you will be able to make and view recordings of the inner workings of your Javascript or Typescript application.
 
@@ -23,4 +25,4 @@ Once installed, whenever you run your app in development and view it in your bro
 - The CodeSee UI can be a little sluggish with larger recordings -- thanks for your patience! For the moment, we ask that you give our UI a second to process now and then. But fear not, we take performance very seriously and we're actively working on performance improvements.
 
 ## [Next step: Installing CodeSee](./installation)
-&nbsp;  
+&nbsp;

@@ -27,12 +27,13 @@ Follow the links below to set up CodeSee for your specific project environment:
 
 - [**Create React App**](../setup-cra)
 - [**Typescript, but without Babel**](../setup-typescript-without-babel)
+- [**Next**](../setup-next)
 - [**Nuxt**](../setup-nuxt)
 - [**Storybook**](../setup-storybook)
 - [**Gatsby**](../setup-gatsby)
 - [**Ember**](../setup-ember)
 
-Or, select generic setup if you use Next.js, Typescript with Babel, or another framework not listed above:
+Or, select generic setup if you use Typescript with Babel, or another framework not listed above:
 
 - [**Generic setup**](../setup-generic)
 
@@ -65,4 +66,4 @@ app.codesee.io
 [*.]okta.com
 ```
 
-&nbsp;  
+&nbsp;

@@ -16,7 +16,7 @@ CodeSee is a tool for developers and development teams. It enables you to visual
   <img alt="CodeSee button in browser" src="img/codesee_in_browser@2x.png" width="244" height="162" align="right">
 </p>
 
-Once you install CodeSee in your app codebase, you'll be able to make recordings of the inner workings of your application.
+Once you install CodeSee in your codebase, you'll be able to make recordings of the inner workings of your application.
 
 When you run your app locally with CodeSee installed, you’ll see a button with the CodeSee logo. Click the CodeSee button to **start recording**, then interact with your app. When you want to **stop recording**, click the button again.
 

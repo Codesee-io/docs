@@ -4,7 +4,7 @@ hide:
 ---
 # Getting started with CodeSee
 
-An overview to the primary features of CodeSee, including recordings, data flows, stories, and sharing.
+Here's an overview to the primary features of CodeSee, including recordings, data flows, stories, and sharing.
 
 ## Making recordings with the CodeSee button
 <p class="block">
@@ -55,7 +55,7 @@ A data flow is a detailed timeline view of the code that ran during a CodeSee re
 
 **Filtering**
 
-* You can hover over any function name and click on the `•••` button to filter out and hide all functions of that type by selecting "Exclude All - Filter out all instances."
+* You can hover over any function name and click on the `•••` button to filter out and hide all occurrences of that same function by selecting "Exclude All - Filter out all instances."
 
 
 ## Using stories to capture your understanding
@@ -74,7 +74,7 @@ From the **Get Link** pop-up, you can choose to change who can access your recor
 
 ## Editing recording titles
 
-Click the ✏️ icon to edit the title of your recording so you can refer to it later.
+Click the ✏️ (pencil) icon to edit the title of your recording so you can refer to it later.
 
 ## Deleting a recording
 

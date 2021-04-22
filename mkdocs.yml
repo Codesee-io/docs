@@ -16,8 +16,8 @@ nav:
     - Quick start guide: quick-start.md
     - Ways to use CodeSee: use-cases.md
   - ⚙️ Advanced setup:
-    - Updating pre-0.7.0 to the latest: upgrade-local-version.md
     - Running CodeSee locally: local.md
+    - Upgrading local to the latest: upgrade-local-version.md
     - Running CodeSee on the Backend: backend.md
     - Changing from local to hosted CodeSee: hosted.md
   - 🙏 Troubleshooting: troubleshooting.md

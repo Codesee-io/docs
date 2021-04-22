@@ -2,7 +2,7 @@
 hide:
   - toc
 ---
-# Getting started guide
+# Getting started with CodeSee
 
 An overview to the primary features of CodeSee, including recordings, data flows, stories, and sharing.
 

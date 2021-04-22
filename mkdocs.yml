@@ -12,10 +12,9 @@ nav:
     - Ember: setup-ember.md
     - Generic setup: setup-generic.md
     - Configuration options: options.md
-  - ⚙️ Advanced setup:
-    - Running CodeSee locally: local.md
-    - Running CodeSee on the Backend: backend.md
-    - Changing from local to hosted CodeSee: hosted.md
+  - 🚀 Using CodeSee:
+    - Quick start guide: quick-start.md
+    - Ways to use CodeSee: use-cases.md
   # - Using CodeSee:
   #   - Quick start guide: extra.md
   #   - Feature A: extra.md
@@ -24,6 +23,11 @@ nav:
   - 🚀 Using CodeSee:
     - Quick start guide: quick-start.md
     - Ways to use CodeSee: use-cases.md
+  - ⚙️ Advanced setup:
+    - Running CodeSee locally: local.md
+    - Running CodeSee on the Backend: backend.md
+    - Changing from local to hosted CodeSee: hosted.md
+  - 🙏 Troubleshooting: troubleshooting.md
   - ⚡ Upgrading versions:
     - Local: upgrade-local-version.md
   # - Troubleshooting:

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Configuring CodeSee with Storybook
 This configuration uses a custom storybook preset, which should be compatible with Storybook version 4.0.0 or newer.
 

@@ -1,4 +1,8 @@
-#Changing from local to hosted CodeSee
+---
+hide:
+  - toc
+---
+# Changing from local to hosted CodeSee
 
 If you're running CodeSee locally but want to use the hosted option instead, you'll need to upgrade your version of CodeSee in slightly different ways, depending on what file your Babel intergration is in.
 

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Configuring CodeSee with Nuxt.js
 
 You'll need to edit your `nuxt.config.js` to make sure the "codesee" babel plugin is included when in development mode.

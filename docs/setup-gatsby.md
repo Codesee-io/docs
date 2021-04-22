@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Configuring CodeSee with Gatsby
 
 **CodeSee is compatible with Gatsby 2.25.x+ or Gatsby 3.x.+**

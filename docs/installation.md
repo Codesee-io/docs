@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Installing CodeSee in your project
 
 Following the instructions below, you will:

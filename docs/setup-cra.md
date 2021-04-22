@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Configuring CodeSee with Create React App
 
 We're going to add [React App Rewired](https://github.com/timarney/react-app-rewired) following the instructions below. Please note that these instructions are slightly different than the ones on the react-app-rewired site. But, if you already have react-app-rewired installed, nothing to worry about here, you can skip to "Step 2) Create a config-overrides.js file".

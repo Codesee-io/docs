@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Configuring CodeSee with Next.js
 
 We'll be adding CodeSee to your `.babelrc` or `babel.config.js`.

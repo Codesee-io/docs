@@ -1,8 +1,8 @@
 site_name: CodeSee Beta
 nav:
-  - Overview: index.md
-  - Installation:
-    - Installing CodeSee: installation.md
+  - 👋 Introduction: index.md
+  - 🛠 Installing CodeSee:
+    - Installation and setup: installation.md
     - Create React App: setup-cra.md
     - Typescript without Babel: setup-typescript-without-babel.md
     - Next: setup-next.md
@@ -12,22 +12,26 @@ nav:
     - Ember: setup-ember.md
     - Generic setup: setup-generic.md
     - Configuration options: options.md
-  - Advanced setup:
+  - ⚙️ Advanced setup:
     - Running CodeSee locally: local.md
     - Running CodeSee on the Backend: backend.md
     - Changing from local to hosted CodeSee: hosted.md
-  - Upgrading versions:
-    - Local: upgrade-local-version.md
   # - Using CodeSee:
   #   - Quick start guide: extra.md
   #   - Feature A: extra.md
   #   - Feature B: extra.md
   #   - Use cases: extra.md
+  - 🚀 Using CodeSee:
+    - Quick start guide: quick-start.md
+    - Ways to use CodeSee: use-cases.md
+  - ⚡ Upgrading versions:
+    - Local: upgrade-local-version.md
   # - Troubleshooting:
   #   - Help with installing CodeSee: extra.md
 theme:
   name: material
   favicon: img/favicon-32x32.png
+  font: false
 markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.superfences

@@ -5,7 +5,7 @@ hide:
 # Troubleshooting
 
 ### We're here to help
-If there's anything you need, or you just want to tell us what you think, please don't hesitate to reach out to us at: <a href="mailto:support@codesee.io">support@codesee.io</a>.
+You can reach us at <a href="mailto:support@codesee.io">support@codesee.io</a> with support questions, feedback, or feature requests.
 
 ## CodeSee compatibility
 

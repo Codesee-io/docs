@@ -1,5 +1,10 @@
+---
+hide:
+  - toc
+---
 # Updating local to the latest version
-WARNING: If you are updating from pre-0.7.0, this update will erase all your existing recordings. We do apologize! We will do our best to avoid this in the future.
+
+_**Warning:** If you are updating from pre-0.7.0, this update will erase all your existing recordings. We do apologize! We will do our best to avoid this in the future._
 
 1. In your local codesee-alpha directory, ```git pull``` the latest changes from this repo
 2. Restart your docker compose by shutting down the docker container (Ctrl-C), and then running ```docker-compose up``` again.

@@ -4,7 +4,7 @@ hide:
 ---
 # Introduction to CodeSee
 
-_**Note: CodeSee is early beta software**. Write us at (<a href="mailto:support@codesee.io">support@codesee.io</a>) with support questions, feedback, or feature requests._
+_**Note: CodeSee is early beta software**. Write us at <a href="mailto:support@codesee.io">support@codesee.io</a> with support questions, feedback, or feature requests._
 
 ---
 

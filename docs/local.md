@@ -1,6 +1,8 @@
-We offer CodeSee not only as a hosted service, but you can also run it locally
-on your machine as a Docker container (please [get in touch with
-us](mailto:devrel@codesee.io?subject=CodeSee Local Access) for access).
+---
+hide:
+  - toc
+---
+CodeSee is offered as a hosted service, but you can also run it locally on your machine as a Docker container (please [get in touch with us](mailto:devrel@codesee.io?subject=CodeSee Local Access) for access).
 
 ## Account Setup
 1. Get access to docker codeseeio/app_node, make sure to have Docker installed, and that you are logged in.

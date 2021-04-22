@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 We will be adding configuration options over time.
 
 ## **`includeLibs`**

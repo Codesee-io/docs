@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Generic setup instructions
 Follow these instructions if your project doesn't use one of the other specific environments listed.
 

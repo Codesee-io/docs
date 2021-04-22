@@ -1,3 +1,6 @@
 .block {
   display: block !important;
 }
+.md-grid {
+  max-width: 980px;
+}

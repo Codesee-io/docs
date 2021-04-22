@@ -16,6 +16,8 @@ nav:
     - Running CodeSee locally: local.md
     - Running CodeSee on the Backend: backend.md
     - Changing from local to hosted CodeSee: hosted.md
+  - Upgrading versions:
+    - Local: upgrade-local-version.md
   # - Using CodeSee:
   #   - Quick start guide: extra.md
   #   - Feature A: extra.md

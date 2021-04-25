@@ -19,6 +19,5 @@ hide:
         ```
         yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
         ```
-        
 4. Rebuild and restart your application
 TROUBLESHOOTING ADVICE: If it appears that nothing has changed, your application may be cacheing its babel artifacts. If you can do a clean build, try that. Or, if not, try removing your ```node_modules/.cache``` directory, or even remove your entire ```node_modules``` directory.

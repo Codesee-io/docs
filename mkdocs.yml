@@ -25,6 +25,7 @@ theme:
   name: material
   favicon: img/favicon-32x32.png
   font: false
+  custom_dir: overrides
 markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.superfences

@@ -24,12 +24,13 @@ The CodeSee Data Flow is laid out in code execution order meaning that it shows 
 
 The column on the right shows all of the values of the variables, functions, objects etc when you made a recording.
 
-<iframe src="https://codesee-docs.s3.amazonaws.com/02+-+Loops.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
+<iframe src="https://codesee-docs.s3.amazonaws.com/03-+Data.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
 
 ### Expanders
 
 Most dev tools are organized in files and folders. Normally to understand what’s going on we have to mentally map how functions call each other. With CodeSee when a function calls another function don’t need to do this mental gymnastics, to see a function that calls another function, you can dive in that function by clicking on the expand button to see more about the called function. 
 
+<!--- replace this link --->
 <iframe src="https://codesee-docs.s3.amazonaws.com/02+-+Loops.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
 
 ### Call stack
@@ -44,6 +45,7 @@ Sometimes your function does something that is beyond what that function was int
   
 #### Inspector
 
+<!--- need to create video for this --->
 The inspector is like having x-ray vision into side effects. You can view details about the following side effects
       * Network Requests
       * others coming soon. 

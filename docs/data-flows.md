@@ -2,8 +2,21 @@
 
 When you record an interaction with CodeSee you create a Data Flow. A data flow is a detailed view of every line of the code that ran in that interaction.   
 ### Code that ran
-The function name is located at the top left and the file path is located to the right of the function name (screenshot)
-  * Loops! If there is a loop, whether it’s an explicit loop like a for  loop or an implicit loop like reduce,  you can visualize each iteration of the loop and the values of the data on each loop’s iteration. (02-gif)
+The function name is located at the top left and the file path is located to the right of the function name
+
+![Function Name and Path](https://codesee-docs.s3.amazonaws.com/01+-+Function+name+and+path.png)
+  
+### Loops 
+
+If there is a loop, whether it’s an explicit loop like a for  loop or an implicit loop like reduce,  you can visualize each iteration of the loop and the values of the data on each loop’s iteration. 
+
+<iframe src="https://codesee-docs.s3.amazonaws.com/02+-+Loops.mp4" style="width:100%; height:300px;"></iframe>
+
+<video><source src="https://codesee-docs.s3.amazonaws.com/02+-+Loops.mp4" type="video/mp4" markdown="1" ></video>
+
+
+
+
 * Execution order
   * The CodeSee Data Flow is laid out in code execution order meaning that it shows what order each function was called in regardless of what file the function is located in (screenshot)
 * Runtime data

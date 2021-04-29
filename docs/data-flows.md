@@ -46,9 +46,7 @@ Sometimes your function does something that is beyond what that function was int
 #### Inspector
 
 <!--- need to create video for this --->
-The inspector is like having x-ray vision into side effects. You can view details about the following side effects
-      * Network Requests
-      * others coming soon. 
+The inspector is like having x-ray vision into side effects. Right now we show you the behavior of Network Requests, the request and the response, but we plan to show other side effects like data state changes, database calls and dom changes soon.”
 
 ### Expressions 
 JavaScript distinguishes expressions and statements. An expression produces a value and can be written wherever a value is expected, for example as an argument in a function call. Each of the following lines contains an expression:

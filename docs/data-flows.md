@@ -31,7 +31,7 @@ The column on the right shows all of the values of the variables, functions, obj
 Most dev tools are organized in files and folders. Normally to understand what’s going on we have to mentally map how functions call each other. With CodeSee when a function calls another function don’t need to do this mental gymnastics, to see a function that calls another function, you can dive in that function by clicking on the expand button to see more about the called function. 
 
 <!--- replace this link --->
-<iframe src="https://codesee-docs.s3.amazonaws.com/02+-+Loops.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
+<iframe src="https://codesee-docs.s3.amazonaws.com/04+-+expanders.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
 
 ### Call stack
 

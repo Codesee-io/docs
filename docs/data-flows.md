@@ -14,7 +14,7 @@ The function name is located at the top left and the file path is located to the
 
 If there is a loop, whether it’s an explicit loop like a for  loop or an implicit loop like reduce,  you can visualize each iteration of the loop and the values of the data on each loop’s iteration. 
 
-<iframe src="https://codesee-docs.s3.amazonaws.com/02+-+Loops.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
+<iframe src="https://codesee-docs.s3.amazonaws.com/02+-+Loops.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe>
 
 ### Execution order
 
@@ -24,19 +24,19 @@ The CodeSee Data Flow is laid out in code execution order meaning that it shows 
 
 The column on the right shows all of the values of the variables, functions, objects etc when you made a recording.
 
-<iframe src="https://codesee-docs.s3.amazonaws.com/03-+Data.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
+<iframe src="https://codesee-docs.s3.amazonaws.com/03-+Data.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe>
 
 ### Expanders
 
 Most dev tools are organized in files and folders. Normally to understand what’s going on we have to mentally map how functions call each other. With CodeSee when a function calls another function don’t need to do this mental gymnastics, to see a function that calls another function, you can dive in that function by clicking on the expand button to see more about the called function. 
 
-<iframe src="https://codesee-docs.s3.amazonaws.com/04+-+expanders.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
+<iframe src="https://codesee-docs.s3.amazonaws.com/04+-+expanders.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe>
 
 ### Call stack
 
 When you are diving in to a Data Flow, the current function that you are exploring sticks to the top so you always are aware of what line of code is part of which function. When that function is about to scroll off screen, we show you where the function ends. If you have nested functions, we show you the end of each function. 
 
-<iframe src="https://codesee-docs.s3.amazonaws.com/05-Call+Stack.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
+<iframe src="https://codesee-docs.s3.amazonaws.com/05-Call+Stack.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe>
 
 ### Side Effects
 
@@ -47,7 +47,7 @@ Sometimes your function does something that is beyond what that function was int
 <!--- need to create video for this --->
 The inspector is like having x-ray vision into side effects. Right now we show you the behavior of Network Requests, the request and the response and data state changes, but we plan to show other side effects like  database calls and dom changes soon.
 
-<iframe src="https://codesee-docs.s3.amazonaws.com/09+-+side+effects.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
+<iframe src="https://codesee-docs.s3.amazonaws.com/09+-+side+effects.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe>
 
 ### Expressions 
 JavaScript distinguishes expressions and statements. An expression produces a value and can be written wherever a value is expected, for example as an argument in a function call. Each of the following lines contains an expression:
@@ -64,11 +64,15 @@ CodeSee shows you the statements in the left most column of the data flow, it sh
 
 When you hover over the expression in the center column it highlights the expression in the code in the left most column. 
 
-<iframe src="https://codesee-docs.s3.amazonaws.com/07-highlights.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
+<!-- <iframe src="https://codesee-docs.s3.amazonaws.com/07-highlights.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe> -->
+![code highlights](../img/cs-highlights.gif)
 
 ### Filtering
 
 If you are overwhelmed by the information presented in the data flow or you want to remove some of the cruft in order to narrow down your focus, you can filter out functions by hovering over the ellipses and clicking Exclude All - Filter out all instances
 
-<iframe src="https://codesee-docs.s3.amazonaws.com/08-+filtering.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
+<!-- <iframe src="https://codesee-docs.s3.amazonaws.com/08-+filtering.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe> -->
+![filtering functions](../img/cs-filter.gif)
 
+
+&nbsp;  

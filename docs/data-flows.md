@@ -30,7 +30,6 @@ The column on the right shows all of the values of the variables, functions, obj
 
 Most dev tools are organized in files and folders. Normally to understand what’s going on we have to mentally map how functions call each other. With CodeSee when a function calls another function don’t need to do this mental gymnastics, to see a function that calls another function, you can dive in that function by clicking on the expand button to see more about the called function. 
 
-<!--- replace this link --->
 <iframe src="https://codesee-docs.s3.amazonaws.com/04+-+expanders.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
 
 ### Call stack
@@ -46,9 +45,9 @@ Sometimes your function does something that is beyond what that function was int
 #### Inspector
 
 <!--- need to create video for this --->
-The inspector is like having x-ray vision into side effects. You can view details about the following side effects
-      * Network Requests
-      * others coming soon. 
+The inspector is like having x-ray vision into side effects. Right now we show you the behavior of Network Requests, the request and the response and data state changes, but we plan to show other side effects like  database calls and dom changes soon.
+
+<iframe src="https://codesee-docs.s3.amazonaws.com/09+-+side+effects.mp4" style="width:100%; height:300px; allow="autoplay;"></iframe>
 
 ### Expressions 
 JavaScript distinguishes expressions and statements. An expression produces a value and can be written wherever a value is expected, for example as an argument in a function call. Each of the following lines contains an expression:

@@ -17,7 +17,7 @@ Follow these instructions if your project doesn't use one of the other specific 
     },
   }
 ```
-If your project does not include a .babelrc file and you have a webpack.config.js file instead, you can add the `["@codesee/instrument", { "hosted": true }]`, to this file. Look for an options block where your babel settings, presets, and plugins are being declared. Please add `["@codesee/instrument", { "hosted": true }]` to the list of your project's plugins as in the example below.
+If your project doesn’t include a babel config file (e.g. `.babelrc` or `babel.config.js`), you may have a babel configuration in your `webpack.config.js` file that you can add the `["@codesee/instrument", { "hosted": true }]` to. Look for an options block where your babel settings, presets, and plugins are being declared. Please add `["@codesee/instrument", { "hosted": true }]` to the list of your project's plugins as in the example below.
 
 ```
    options: {

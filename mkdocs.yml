@@ -19,6 +19,7 @@ nav:
   - ⚙️ Advanced setup:
     - Running CodeSee locally: local.md
     - Upgrading local to the latest: upgrade-local-version.md
+    - Upgrading hosted to the latest: upgrade-hosted-version.md
     - Running CodeSee on the Backend: backend.md
     - Changing from local to hosted CodeSee: hosted.md
   - 🙏 Troubleshooting: troubleshooting.md

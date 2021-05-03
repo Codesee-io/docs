@@ -6,7 +6,7 @@ hide:
 
 1. In your local codesee-alpha directory, ```git pull``` the latest changes from this repo
 2. Restart your docker compose by shutting down the docker container (Ctrl-C), and then running ```docker-compose up``` again.
-3. From the root of your app, install the latest codesee packages:
+3. From the root of your app, install the latest CodeSee packages:
 
     === "npm"
 

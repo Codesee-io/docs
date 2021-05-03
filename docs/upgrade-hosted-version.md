@@ -1,4 +1,10 @@
-1. From the root of your app, install the latest codesee packages:
+---
+hide:
+  - toc
+---
+# Upgrading hosted to the latest version
+
+1. From the root of your app, install the latest CodeSee packages:
 
     === "npm"
 
@@ -11,7 +17,9 @@
         ```
         yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
         ```
-2. Rebuild your app, or just start in development mode
+
+
+2. Rebuild your app, and start your app development mode
 
 
 ## Troubleshooting

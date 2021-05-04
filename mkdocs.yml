@@ -16,6 +16,7 @@ nav:
     - Quick start guide: quick-start.md
     - Ways to use CodeSee: use-cases.md
     - Using Data Flows: data-flows.md
+    - Using Stories: stories.md
   - ⚙️ Advanced setup:
     - Running CodeSee locally: local.md
     - Upgrading local to the latest: upgrade-local-version.md

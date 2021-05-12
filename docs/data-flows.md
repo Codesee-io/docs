@@ -8,10 +8,10 @@ When you record an interaction with CodeSee you create a Data Flow. A data flow 
 
 ### Icon Legend
 
-![Function Name and Path](https://codesee-docs.s3.amazonaws.com/back+end+tag.png) - Backend: This function connects to a function on the backend.
-![Function Name and Path](https://codesee-docs.s3.amazonaws.com/go+to+execution+tag.png) - Go To Execution: Allows you to go to where the function is executed.
-![Function Name and Path](https://codesee-docs.s3.amazonaws.com/network.png) - Network Request: Indicates a network request
-![Function Name and Path](https://codesee-docs.s3.amazonaws.com/state_change2.png) - State Change: Indicates a React state change 
+- ![Function Name and Path](https://codesee-docs.s3.amazonaws.com/back+end+tag.png) - Backend: This function connects to a function on the backend.
+- ![Function Name and Path](https://codesee-docs.s3.amazonaws.com/go+to+execution+tag.png) - Go To Execution: Allows you to go to where the function is executed.
+- ![Function Name and Path](https://codesee-docs.s3.amazonaws.com/network.png) - Network Request: Indicates a network request
+- ![Function Name and Path](https://codesee-docs.s3.amazonaws.com/state_change2.png) - State Change: Indicates a React state change 
 
 
 ### Code that ran

@@ -14,7 +14,7 @@ nav:
     - Configuration options: options.md
   - 🚀 Using CodeSee:
     - Quick start guide: quick-start.md
-    - Ways to use CodeSee: use-cases.md
+    - When to use CodeSee: use-cases.md
     - Using Data Flows: data-flows.md
     - Using Stories: stories.md
   - ⚙️ Advanced setup:

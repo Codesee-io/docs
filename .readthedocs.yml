@@ -2,15 +2,16 @@
 # Read the Docs configuration file
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
 
-# Required
+# configuration verion
 version: 2
-
-# Build documentation with MkDocs
-#mkdocs:
-#  configuration: mkdocs.yml
+# tell it to use mkdocs
 mkdocs:
   configuration: mkdocs.yml
   fail_on_warning: false
+# specify Python version
+python:
+  version: 3.7
+  # install the theme and associated requirements
+  install:
+    - requirements: requirements.txt
 
-# Optionally build your docs in additional formats such as PDF and ePub
-formats: all

@@ -1,0 +1,8 @@
+# ignore virtual environments
+venv
+env
+
+#ignore build
+site
+
+.DS_Store

@@ -1,1 +1,1 @@
-python -m pip install
+mkdocs-material==7.1.4

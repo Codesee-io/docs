@@ -32,7 +32,7 @@ module.exports = function (defaults) {
 
   // Loads CodeSee, but only when in development mode
   if (isDevelopment) {
-    app.import('node_modules/@codesee/tracker/build/codesee.js');
+    app.import('node_modules/@codesee/tracker/build/codesee.web.hosted.js');
   }
 
 

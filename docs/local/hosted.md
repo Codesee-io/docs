@@ -1,14 +1,10 @@
----
-hide:
-  - toc
----
 # Changing from local to hosted CodeSee
 
 If you're running CodeSee locally but want to use the hosted option instead, you'll need to upgrade your version of CodeSee in slightly different ways, depending on what file your Babel intergration is in.
 
 While this process will not delete any previous CodeSee recordings, you'll need to switch back to the local hosted option to access recordings previously recorded with CodeSee Local.
 
-## 1. Updating the CodeSee dependencies
+## Update the CodeSee dependencies
 
 Update the devDependencies in your `packages.json` file to reflect the current CodeSee version. You can run either of these commands to update:
 
@@ -24,7 +20,7 @@ Update the devDependencies in your `packages.json` file to reflect the current C
     yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
     ```
 
-## 2. Update the CodeSee tooling declaration
+## Update the CodeSee tooling declaration
 
 ### Updating with Create React App
 If you're using CodeSee with a Create React App application, you'll make these changes in the `config-overrides.js` file. Before updating, your `config-overrides.js` file should look something like this:
@@ -81,11 +77,11 @@ Alter this text to add `{hosted: true}` to your CodeSee plugin. If `“@codesee/
   }
 ```
 
-## 3. Reset localStorage
+## Reset localStorage
 
 You'll next need to clear `localStorage`. Open your application in your browser, making sure that the CodeSee floating action button is visible:
 
-![CodeSee button running in web app](img/codesee_button.png)
+![CodeSee button running in web app](/img/codesee_button.png)
 
 Right click on any point of your application in your browser and select inspect, to open Chrome developement tools.
 
@@ -93,6 +89,5 @@ Click on the Application option in your Chrome development tools. Then navigate 
 
 Look for `http://localhost:5198`, right click on it and choose clear:
 
-![Resetting local storage in Chrome DevTools](img/remove_local_storage.png)
-
-&nbsp;  
+![Resetting local storage in Chrome DevTools](/img/remove_local_storage.png)
+ 

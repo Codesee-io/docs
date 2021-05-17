@@ -1,7 +1,3 @@
----
-hide:
-  - toc
----
 # Generic setup instructions
 Follow these instructions if your project doesn't use one of the other specific environments listed.
 
@@ -31,6 +27,8 @@ If your project doesn’t include a babel config file (e.g. `.babelrc` or `babel
     },
 ```
 
-#### [Next step: Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)
+## Next step: 
 
-&nbsp;  
+[Rebuild and run your app](/install/installation/#step-3-rebuild-and-run-your-app-locally)
+
+ 

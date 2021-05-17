@@ -1,7 +1,3 @@
----
-hide:
-  - toc
----
 We will be adding configuration options over time.
 
 ## **`includeLibs`**
@@ -27,5 +23,3 @@ By default, CodeSee will run locally on your Docker container. In order to run i
       <other plugins>
     ]
 ```
-
-&nbsp;  

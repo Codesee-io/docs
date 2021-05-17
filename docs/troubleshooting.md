@@ -1,7 +1,3 @@
----
-hide:
-  - toc
----
 # Troubleshooting
 
 ### We're here to help

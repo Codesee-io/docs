@@ -1,7 +1,3 @@
----
-hide:
-  - toc
----
 # Configuring CodeSee with Gatsby
 
 **CodeSee is compatible with Gatsby 2.25.x+ or Gatsby 3.x.+**
@@ -19,6 +15,7 @@ hide:
   }
 ```
 
-#### [Next step: Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)
+## Next steps:
 
-&nbsp;  
+[Rebuild and run your app](/install/installation/#step-3-rebuild-and-run-your-app-locally)
+

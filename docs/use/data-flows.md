@@ -1,12 +1,8 @@
----
-hide:
-  - toc
----
 # Getting Started With CodeSee: Anatomy of a Data Flow
 
 When you record an interaction with CodeSee you create a Data Flow. A data flow is a detailed view of every line of the code that ran in that interaction.   
 
-### Icon Legend
+### Icon legend
 
 - ![Function Name and Path](https://codesee-docs.s3.amazonaws.com/back+end+tag.png) - Backend: This function connects to a function on the backend.
 - ![Function Name and Path](https://codesee-docs.s3.amazonaws.com/go+to+execution+tag.png) - Go To Execution: Allows you to go to where the function is executed.
@@ -74,14 +70,14 @@ CodeSee shows you the statements in the left most column of the data flow, it sh
 When you hover over the expression in the center column it highlights the expression in the code in the left most column. 
 
 <!-- <iframe src="https://codesee-docs.s3.amazonaws.com/07-highlights.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe> -->
-![code highlights](../img/cs-highlights.gif)
+![code highlights](/img/cs-highlights.gif)
 
 ### Filtering
 
 If you are overwhelmed by the information presented in the data flow or you want to remove some of the cruft in order to narrow down your focus, you can filter out functions by hovering over the ellipses and clicking Exclude All - Filter out all instances
 
 <!-- <iframe src="https://codesee-docs.s3.amazonaws.com/08-+filtering.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe> -->
-![filtering functions](../img/cs-filter.gif)
+![filtering functions](/img/cs-filter.gif)
 
 
-&nbsp;  
+

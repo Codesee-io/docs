@@ -2,7 +2,7 @@ site_name: CodeSee Beta
 nav:
   - 👋 Welcome:
     - Introduction: index.md
-    - 🙏 Troubleshooting: troubleshooting.md
+    - Troubleshooting: troubleshooting.md
   - 🛠 CodeSee installation:
     - Installation and setup: install/installation.md
     - Create React App: install/setup-cra.md

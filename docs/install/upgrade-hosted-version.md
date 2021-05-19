@@ -1,7 +1,3 @@
----
-hide:
-  - toc
----
 # Upgrading hosted to the latest version
 
 1. From the root of your app, install the latest CodeSee packages:

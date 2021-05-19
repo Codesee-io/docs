@@ -1,7 +1,3 @@
----
-hide:
-  - toc
----
 # Ember installation instructions (experimental!)
 
 **WARNING:** Ember support is very early and experimental. At this point, we've only tested on a couple of relatively simple apps. If you are willing to give this a shot on your codebase, we would love to hear about your experience so we can continue to improve support.
@@ -43,6 +39,6 @@ module.exports = function (defaults) {
 };
 ```
 
-#### [Next step: Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)
+## Next steps:
 
-&nbsp;  
+[Rebuild and run your app](/install/installation/#step-3-rebuild-and-run-your-app-locally)

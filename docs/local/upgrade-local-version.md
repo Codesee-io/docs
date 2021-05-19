@@ -1,7 +1,3 @@
----
-hide:
-  - toc
----
 # Upgrading local to the latest version
 
 1. In your local codesee-alpha directory, ```git pull``` the latest changes from this repo

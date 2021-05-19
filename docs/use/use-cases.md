@@ -1,7 +1,3 @@
----
-hide:
-  - toc
----
 # Ways to use CodeSee
 
 CodeSee is a tool to help you read, understand, write, or share code, whether you are working on a personal project you haven’t touched in a year, debugging code at work, or getting up to speed your first week at a new job.
@@ -15,4 +11,3 @@ Here are a few use cases that have helped developers get up to speed quickly and
 8. Attach a shared story or data flow to your **pull request** to share with your teammates.
 9. Use a shared story or data flow with **QA** as a way to replicate bugs and issues in the codebase.
 
-&nbsp;

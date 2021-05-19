@@ -1,7 +1,3 @@
----
-hide:
-  - toc
----
 # Introduction to CodeSee
 
 _**Note: CodeSee is early beta software**. Write us at <a href="mailto:support@codesee.io">support@codesee.io</a> with support questions, feedback, or feature requests._
@@ -27,5 +23,8 @@ You’ll also see a summarized view of the code in the **Overview** tab. You'll 
 CodeSee currently works with JavaScript and TypeScript web applications and can record data flows on both the front end and back end (experimental). By default, recordings from your app are hosted securely to be viewed from the web. See 'Advanced setup' for instructions on configuring your app to run locally.
 
 
-## [Next step: Installing CodeSee](./installation)
-&nbsp;
+## Next steps: 
+  
+* [Install CodeSee into a project](/install/installation)
+* [Set up CodeSee locally](/local/local/)
+

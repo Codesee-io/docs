@@ -1,34 +1,38 @@
 site_name: CodeSee Beta
 nav:
-  - 👋 Introduction: index.md
-  - 🛠 Installing CodeSee:
-    - Installation and setup: installation.md
-    - Create React App: setup-cra.md
-    - Typescript without Babel: setup-typescript-without-babel.md
-    - Next: setup-next.md
-    - Nuxt: setup-nuxt.md
-    - Storybook: setup-storybook.md
-    - Gatsby: setup-gatsby.md
-    - Ember: setup-ember.md
-    - Generic setup: setup-generic.md
-    - Configuration options: options.md
+  - 👋 Welcome:
+    - Introduction: index.md
+    - Troubleshooting: troubleshooting.md
+  - 🛠 CodeSee installation:
+    - Installation and setup: install/installation.md
+    - Create React App: install/setup-cra.md
+    - Typescript without Babel: install/setup-typescript-without-babel.md
+    - Next: install/setup-next.md
+    - Nuxt: install/setup-nuxt.md
+    - Storybook: install/setup-storybook.md
+    - Gatsby: install/setup-gatsby.md
+    - Ember: install/setup-ember.md
+    - Generic setup: install/setup-generic.md
+    - Upgrading your installation: install/upgrade-hosted-version.md
+  - ⚙️ CodeSee Local:
+    - Introducing CodeSee Local: local/index.md
+    - Running CodeSee locally: local/local.md
+    - Upgrading local: local/upgrade-local-version.md
+    - Running CodeSee on the backend: local/backend.md
+    - Changing from local to hosted CodeSee: local/hosted.md  
   - 🚀 Using CodeSee:
-    - Quick start guide: quick-start.md
-    - When to use CodeSee: use-cases.md
-    - Using Data Flows: data-flows.md
-    - Using Stories: stories.md
-  - ⚙️ Advanced setup:
-    - Running CodeSee locally: local.md
-    - Upgrading local to the latest: upgrade-local-version.md
-    - Upgrading hosted to the latest: upgrade-hosted-version.md
-    - Running CodeSee on the Backend: backend.md
-    - Changing from local to hosted CodeSee: hosted.md
-  - 🙏 Troubleshooting: troubleshooting.md
+    - Quick start guide: use/quick-start.md
+    - Configuration options: use/options.md
+    - When to use CodeSee: use/use-cases.md
+    - Using Data Flows: use/data-flows.md
+    - Using Stories: use/stories.md
 theme:
   name: material
   favicon: img/favicon-32x32.png
   font: false
   custom_dir: overrides
+  features:
+    - navigation.tabs
 markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.superfences

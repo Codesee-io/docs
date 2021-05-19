@@ -1,14 +1,10 @@
----
-hide:
-  - toc
----
 # Getting started with CodeSee
 
 Here's an overview to the primary features of CodeSee, including recordings, data flows, stories, and sharing.
 
 ## Making recordings with the CodeSee button
 <p class="block">
-  <img alt="CodeSee button in browser" src="../img/codesee_in_browser@2x.png" width="244" height="162" align="right">
+  <img alt="CodeSee button in browser" src="/img/codesee_in_browser@2x.png" width="244" height="162" align="right">
 </p>
 
 If you see the CodeSee button when you run your app locally, you're ready to start using CodeSee.
@@ -27,7 +23,7 @@ When you finish recording, CodeSee will open a new tab for your recording once a
 
 A data flow is a detailed timeline view of the code that ran during a CodeSee recording. The data flow is laid out in code execution order, meaning that it shows what order each function was called in regardless of what file the function is located in.
 
-![CodeSee data flow](../img/data_flow.png)
+![CodeSee data flow](/img/data_flow.png)
 
 **Source code**
 
@@ -67,7 +63,7 @@ To create or view a story, open the story bar on the far right of the data flow 
 
 ## Sharing recordings and stories
 
-You can share your data flows and stories publicly or with team members on the same domain. To bring up sharing options, click on the `Share` button from the top of your recording, or the three-dot overflow menu on the library page.
+You can share your data flows and stories publicly or with team members on the same domain. To bring up sharing options, click on the **Share** button from the top of your recording, or the three-dot overflow menu on the library page.
 
 From the **Get Link** pop-up, you can choose to change who can access your recording page, along with any stories you've attached to the data flow. If you make it Public, anyone with the link will be able to view the page. If you make it Organization, only CodeSee users registered with the same email domain as you will be able to see the page.
 
@@ -78,7 +74,5 @@ Click the ✏️ (pencil) icon to edit the title of your recording so you can re
 
 ## Deleting a recording
 
-Click the `•••` button, then **Delete** to remove your recording permanently from your library. This will delete any stories you've written associated with the data flow.
+Click the **•••** button, then **Delete** to remove your recording permanently from your library. This will delete any stories you've written associated with the data flow.
 
-
-&nbsp;

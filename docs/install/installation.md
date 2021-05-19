@@ -1,8 +1,6 @@
----
-hide:
-  - toc
----
 # Installing CodeSee in your project
+
+This section describes how to install CodeSee into your project.
 
 Following the instructions below, you will:
 
@@ -29,25 +27,23 @@ In the terminal, run the install command for your package manager:
 ## Step 2: Configure your project for CodeSee
 Follow the links below to set up CodeSee for your specific project environment:
 
-- [**Create React App**](../setup-cra)
-- [**Typescript, but without Babel**](../setup-typescript-without-babel)
-- [**Next**](../setup-next)
-- [**Nuxt**](../setup-nuxt)
-- [**Storybook**](../setup-storybook)
-- [**Gatsby**](../setup-gatsby)
-- [**Ember**](../setup-ember)
+- [**Create React App**](/install/setup-cra)
+- [**Typescript, but without Babel**](/install/setup-typescript-without-babel)
+- [**Next**](/install/setup-next)
+- [**Nuxt**](/install/setup-nuxt)
+- [**Storybook**](/install/setup-storybook)
+- [**Gatsby**](/install/setup-gatsby)
+- [**Ember**](/install/setup-ember)
 
 Or, select generic setup if you use Typescript with Babel, or another framework not listed above:
 
-- [**Generic setup**](../setup-generic)
+- [**Generic setup**](/install/setup-generic)
 
 ## Step 3: Rebuild and run your app locally
 Rebuild your app, wait a few seconds, and you should see the CodeSee button towards the top right of your screen. Congrats, you're ready to start using CodeSee!
 
 
-## [Next step: Using CodeSee](../quick-start)
+## Next steps:
 
-## [Troubleshooting](../troubleshooting)
-
-
-&nbsp;
+* [Using CodeSee](/use/quick-start)
+* [Troubleshooting](/troubleshooting)

@@ -1,11 +1,7 @@
----
-hide:
-  - toc
----
 # Configuring CodeSee with Storybook
 This configuration uses a custom storybook preset, which should be compatible with Storybook version 4.0.0 or newer.
 
-**Place codesee-storybook-preset.js in your .storybook directory**
+## Place codesee-storybook-preset.js in your .storybook directory
 
 Copy the following into a new file called `codesee-storybook-preset.js`
 inside your `.storybook` directory:
@@ -22,7 +18,7 @@ module.exports = {
 };
 ```
 
-**Add the preset to addons in main.js**
+## Add the preset to addons in main.js
 
 You should have a `main.js` in your `.storybook` directory.
 
@@ -56,6 +52,6 @@ module.exports = {
 }
 ```
 
-#### [Next step: Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)
+## Next steps:
 
-&nbsp;  
+[Rebuild and run your app](/install/installation/#step-3-rebuild-and-run-your-app-locally)

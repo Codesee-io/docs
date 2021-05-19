@@ -1,7 +1,3 @@
----
-hide:
-  - toc
----
 If you'd like CodeSee to run on the backend, CodeSee needs to be configured to start recording immediately. This is how:
 
 Two options, either:
@@ -27,5 +23,3 @@ module.exports = {
   ]
 };
 ```
-
-&nbsp;  

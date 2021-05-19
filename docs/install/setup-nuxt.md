@@ -1,12 +1,9 @@
----
-hide:
-  - toc
----
 # Configuring CodeSee with Nuxt.js
 
 You'll need to edit your `nuxt.config.js` to make sure the "codesee" babel plugin is included when in development mode.
 
-**1. If you haven't already, store your config in a variable named `config`.**
+## Store your config in a variable named `config`
+
 That is, change from:
 
 Before (in your `nuxt.config.js`)
@@ -25,7 +22,8 @@ const config = {
 export default config;
 ```
 
-**2. Add the following, which will ensure CodeSee runs when your app is run in development mode
+## Edit your config to ensure CodeSee runs when your app is run in development mode
+
 The new code goes just before the `export default config;` line.**
 
 In your `nuxt.config.js`:
@@ -44,6 +42,6 @@ if (process.env.NODE_ENV !== 'production') {
 export default config;
 ```
 
-#### [Next step: Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)
+## Next steps: 
 
-&nbsp;  
+[Rebuild and run your app](/install/installation/#step-3-rebuild-and-run-your-app-locally)

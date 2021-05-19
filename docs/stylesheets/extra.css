@@ -1,6 +1,7 @@
 .block {
   display: block !important;
 }
-.md-grid {
-  max-width: 980px !important;
+
+.md-main {
+  padding-bottom: 1em;
 }

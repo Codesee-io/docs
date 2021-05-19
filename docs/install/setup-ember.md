@@ -4,8 +4,8 @@
 
 We'll need to modify your babel config, and import `@codesee/tracker` both which we can do in the `ember-cli-build.js` file.  Here is an example structure that should work well for your app. Note that:
 1. We detect development mode
-2. We construct an object that is our babel options, and pass that into the EmberApp constructor. We add the @codesee/instrument babel plugin to those options with the `frameworks: ["ember"]` option, but only in development mode.
-3. We use `app.import` to load the `@codesee/tracker` npm package, but only in development mode
+2. We construct an object that is our babel options, and pass that into the EmberApp constructor. Then, only in development mode, we add `@codesee/instrument` to the list of babel plugins, along with the `frameworks: ["ember"]` option.
+3. Only in development mode, we use `app.import` to load the `@codesee/tracker/build/codesee.web.hosted.js` npm package. (Note that for a local install, please import `@codesee/tracker/build/codesee.web.js` instead.)
 
 ```
 module.exports = function (defaults) {
@@ -17,8 +17,8 @@ module.exports = function (defaults) {
 
   // Adds CodeSee instrumentation, but only in development mode
   if (isDevelopment) {
-    babel.plugins ||= [];
-    babel.plugins.push( ["@codesee/instrument", { hosted: true, frameworks: ["ember"]}] );
+    babel.plugins = babel.plugins || [];
+    babel.plugins.push( ["@codesee/instrument", {frameworks: ["ember"]}] );
   }
 
   let app = new EmberApp(defaults, {
@@ -28,11 +28,12 @@ module.exports = function (defaults) {
 
   // Loads CodeSee, but only when in development mode
   if (isDevelopment) {
-    app.import('node_modules/@codesee/tracker/build/codesee.js');
+    app.import('node_modules/@codesee/tracker/build/codesee.web.hosted.js');
   }
 
 
   /* ... */
+
 
   return app.toTree();
 };

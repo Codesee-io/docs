@@ -1,3 +1,7 @@
 .block {
   display: block !important;
 }
+
+.md-main {
+  padding-bottom: 1em;
+}

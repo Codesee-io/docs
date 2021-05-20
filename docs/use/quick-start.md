@@ -4,7 +4,7 @@ Here's an overview to the primary features of CodeSee, including recordings, dat
 
 ## Making recordings with the CodeSee button
 <p class="block">
-  <img alt="CodeSee button in browser" src="img/codesee_in_browser@2x.png" width="244" height="162" align="right">
+  <img alt="CodeSee button in browser" src="../../img/codesee_in_browser@2x.png" width="244" height="162" align="right">
 </p>
 
 If you see the CodeSee button when you run your app locally, you're ready to start using CodeSee.
@@ -23,7 +23,7 @@ When you finish recording, CodeSee will open a new tab for your recording once a
 
 A data flow is a detailed timeline view of the code that ran during a CodeSee recording. The data flow is laid out in code execution order, meaning that it shows what order each function was called in regardless of what file the function is located in.
 
-![CodeSee data flow](img/data_flow.png)
+![CodeSee data flow](../../img/data_flow.png)
 
 **Source code**
 

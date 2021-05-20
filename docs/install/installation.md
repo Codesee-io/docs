@@ -1,6 +1,6 @@
 # Installing CodeSee in your project
 
-This section describes how to install CodeSee into your project.
+This section describes how to install CodeSee into your project. The instructions assume you have an existing project that you want to add CodeSee to.
 
 Following these instructions, you will:
 
@@ -14,13 +14,13 @@ In the terminal, run the install command for your package manager:
 
 === "npm"
 
-    ```
+    ```shell
     npm install --save-dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
     ```
 
 === "yarn"
 
-    ```
+    ```shell
     yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
     ```
 

@@ -1,7 +1,14 @@
+:root {
+  --md-primary-fg-color:        #3A2496;
+  --md-primary-fg-color--light: #6639e4;
+  --md-primary-fg-color--dark:  #131128;
+  --md-accent-fg-color: #6639e4;
+}
+
 .block {
   display: block !important;
 }
 
 .md-main {
-  padding-bottom: 1em;
+  padding-bottom: 3em;
 }

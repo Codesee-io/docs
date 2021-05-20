@@ -25,6 +25,6 @@ CodeSee currently works with JavaScript and TypeScript web applications, and can
 
 ## Next steps 
   
-* [Install CodeSee into a project](/install/installation)
-* [Set up CodeSee locally](/local/local/)
+* [Install CodeSee into a project](install/installation)
+* [Set up CodeSee locally](local/local/)
 

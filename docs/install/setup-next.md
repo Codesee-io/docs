@@ -51,3 +51,7 @@ then you can add CodeSee with:
 ```
 
 And that's it! The next time you run your app in development mode, you should see a circle with the CodeSee eye in your webpage.
+
+## Next step: 
+
+[Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)

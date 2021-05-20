@@ -23,7 +23,7 @@ You’ll also see a summarized view of the code in the **Overview** tab. You'll 
 CodeSee currently works with JavaScript and TypeScript web applications and can record data flows on both the front end and back end (experimental). By default, recordings from your app are hosted securely to be viewed from the web. See 'Advanced setup' for instructions on configuring your app to run locally.
 
 
-## Next steps: 
+## Next steps 
   
 * [Install CodeSee into a project](/install/installation)
 * [Set up CodeSee locally](/local/local/)

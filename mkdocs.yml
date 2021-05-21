@@ -1,4 +1,5 @@
 site_name: CodeSee Beta
+site_url: https://docs.codesee.io/en/latest/
 nav:
   - 👋 Welcome:
     - Introduction: index.md

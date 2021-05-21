@@ -94,4 +94,4 @@ You'll probably want to add `codesee/` to your `.gitignore` file, so you don't a
 
 ## Next step: 
 
-[Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)
+[Rebuild and run your app](/install/installation/#step-3-rebuild-and-run-your-app-locally)

@@ -7,7 +7,7 @@ Stories in CodeSee let you build a narrative around the code in whatever order m
 ### Create a Story
 
 1. To create a new story in your data flow, expand the story bar on the far right of the screen. Add a title and optional description to your story.
-2. Click “Add Story Element.”
+2. Click **Add Story Element**.
 3. Add content to your story element. These are free form blocks for you to:
   * Make notes to yourself 
   * Add reminders to revisit particular locations

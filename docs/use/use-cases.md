@@ -8,6 +8,6 @@ Here are a few use cases that have helped developers get up to speed quickly and
 3. While you are learning something new about a codebase, add a story to your data flow to capture your understanding, so you don't have to code-dive again.
 6. When a teammate has a question about the code and you know the answer, use a data flow or story to share your understanding.
 7. When you've built a feature that others will likely need in the future, use recordings and stories to share your understanding with the team.
-8. Attach a shared story or data flow to your **pull request** to share with your teammates.
-9. Use a shared story or data flow with **QA** as a way to replicate bugs and issues in the codebase.
+8. Attach a shared story or data flow to your pull request to share with your teammates.
+9. Use a shared story or data flow with QA as a way to replicate bugs and issues in the codebase.
 

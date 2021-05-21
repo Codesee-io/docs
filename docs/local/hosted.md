@@ -36,7 +36,7 @@ module.exports = function override(config, env) {
 }
 ```
 
-Alter this text to add `{hosted: true}` to your CodeSee plugin. If `“@codesee/instrument”` is not currently wrapped in its own array in your file, you will need to do so, as shown below. If it is already wrapped in its own array as shown here `[“@codesee/instrument”]`, please add `{hosted: true}` to the array as shown below.
+Alter this text to add `{hosted: true}` to your CodeSee plugin. If `"@codesee/instrument"` is not currently wrapped in its own array in your file, you will need to do so, as shown below. If it is already wrapped in its own array as shown here `["@codesee/instrument"]`, please add `{hosted: true}` to the array as shown below.
 
 ```
 module.exports = function override(config, env) {
@@ -64,7 +64,7 @@ Navigate to the file that you've added your CodeSee plugin to. You can search fo
   }
 ```
 
-Alter this text to add `{hosted: true}` to your CodeSee plugin. If `“@codesee/instrument”` is not currently wrapped in its own array in your file, you will need to do so, as shown below. If it is already wrapped in its own array as shown here `[“@codesee/instrument”]`, please add `{hosted: true}` to the array as shown below.
+Alter this text to add `{hosted: true}` to your CodeSee plugin. If `"@codesee/instrument"` is not currently wrapped in its own array in your file, you will need to do so, as shown below. If it is already wrapped in its own array as shown here `["@codesee/instrument"]`, please add `{hosted: true}` to the array as shown below.
 
 ```
   "env": {
@@ -81,7 +81,7 @@ Alter this text to add `{hosted: true}` to your CodeSee plugin. If `“@codesee/
 
 You'll next need to clear `localStorage`. Open your application in your browser, making sure that the CodeSee floating action button is visible:
 
-![CodeSee button running in web app](../../img/codesee_button.png)
+![CodeSee button running in web app](/img/codesee_button.png)
 
 Right click on any point of your application in your browser and select inspect, to open Chrome developement tools.
 
@@ -89,5 +89,5 @@ Click on the Application option in your Chrome development tools. Then navigate 
 
 Look for `http://localhost:5198`, right click on it and choose clear:
 
-![Resetting local storage in Chrome DevTools](../../img/remove_local_storage.png)
+![Resetting local storage in Chrome DevTools](/img/remove_local_storage.png)
  

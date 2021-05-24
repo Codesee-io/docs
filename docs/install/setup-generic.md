@@ -35,7 +35,7 @@ If you have a large, enterprise or high data application, we recommend to set th
 "plugins": [
         ["@codesee/instrument", { "hosted": true, "verbose": false }],
         /* ... other dev plugins ... */
-      ]
+]
 ```
 
 

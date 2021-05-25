@@ -1,13 +1,14 @@
 # Configuring CodeSee with Gatsby
 
-**CodeSee is compatible with Gatsby 2.25.x+ or Gatsby 3.x.+**
+!!! Note
+    CodeSee is compatible with Gatsby 2.25.x+ or Gatsby 3.x.+
 
 --8<-- "snippets/install-first-step.md"
 
 ## Configure your project
 
-1. You will need to follow [the instructions](https://www.gatsbyjs.com/docs/how-to/custom-configuration/babel/) for adding a `.babelrc` to your gatsby build if you have not already.
-2. Once you've done that, add the "codesee" plugin for development. Add the following to the "env" -> "development" part of your config ("env" goes at the top level):
+1. Follow [the instructions](https://www.gatsbyjs.com/docs/how-to/custom-configuration/babel/) for adding a `.babelrc` to your Gatsby build, if you have not already done so.
+2. Add the `codesee` plugin for development. Add the following to the `env` -> `development` part of your config (`env` goes at the top level):
 ```
   "env": {
     "development": {

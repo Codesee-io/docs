@@ -32,9 +32,11 @@ If your project doesn’t include a babel config file (e.g. `.babelrc` or `babel
     },
 ```
 
-## Optional config for large or high data applications
 
-If you have a large, enterprise or high data application, we recommend to set the data verbosity to false. By default data verbosity is set to true.
+## Optional Config for Large or High Data Applications:
+
+If you have a large, enterprise or high data application, we recommend to set the data verbosity to `false`. By default data verbosity is set to true. 
+
 
 ```
 "plugins": [
@@ -43,7 +45,9 @@ If you have a large, enterprise or high data application, we recommend to set th
 ]
 ```
 
+
 --8<-- "snippets/install-last-step-rebuild.md"
+
 
 
 

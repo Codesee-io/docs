@@ -1,4 +1,4 @@
-# Installing CodeSee in your project
+# Overview: Installing CodeSee in your project
 
 This section describes how to install CodeSee into your project. The instructions assume you have an existing project that you want to add CodeSee to.
 
@@ -9,22 +9,9 @@ Following these instructions, you will:
 3. Rebuild and run your app locally.
 
 
-## Step 1: Install the CodeSee package in your JavaScript or TypeScript app
-In the terminal, run the install command for your package manager:
+--8<-- "snippets/install-first-step.md"
 
-=== "npm"
-
-    ```shell
-    npm install --save-dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
-    ```
-
-=== "yarn"
-
-    ```shell
-    yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
-    ```
-
-## Step 2: Configure your project for CodeSee
+## Configure your project for CodeSee
 
 Follow the links below to set up CodeSee for your specific project environment:
 
@@ -40,10 +27,8 @@ Or, select generic setup if you use Typescript with Babel, or another framework 
 
 - [Generic setup](/install/setup-generic)
 
-## Step 3: Rebuild and run your app locally
 
-Rebuild your app, wait a few seconds, and you should see the CodeSee button towards the top right of your screen. Congrats, you're ready to start using CodeSee!
-
+--8<-- "snippets/install-last-step-rebuild.md"
 
 ## Next steps
 

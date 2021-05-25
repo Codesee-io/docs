@@ -1,6 +1,8 @@
 # Configuring CodeSee with a Typescript project that doesn't use Babel
 In these instructions, we will set up a parallel build system using babel so that your existing flow will be unchanged. You will be able to continue to use `tsc` to compile and run your typescript files the same as you've always done. We will add new "build:codesee" and "run:codesee" commands to your package.json specifically for CodeSee. They will build your project and put the resulting artifacts into the /codesee directory.
 
+--8<-- "snippets/install-first-step.md"
+
 ## Install Packages
 
 We need to install the packages needed for babel. This will allow us to convert your typescript code into javascript using babel.
@@ -92,6 +94,5 @@ And your program should be running the same as always, but with a purple CodeSee
 
 You'll probably want to add `codesee/` to your `.gitignore` file, so you don't accidentally commit any of the babel build products from the /codesee directory.
 
-## Next step: 
+--8<-- "snippets/install-last-step-rebuild.md"
 
-[Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)

@@ -4,13 +4,15 @@ CodeSee supports Create React App 2.x or newer. If you're not sure what version 
 
 You need to add [React App Rewired](https://github.com/timarney/react-app-rewired) to your project. Note that these instructions are slightly different to the ones on the react-app-rewired site. If you already have react-app-rewired installed, you can skip to [Step 2: Create a `config-overrides.js` file in the root directory](#step-2-create-a-config-overrides-js-file-in-the-root-directory).
 
-## Step 1: Install react-app-rewired
+--8<-- "snippets/install-first-step.md"
+
+## Install react-app-rewired
 
 ```shell
 $ npm install react-app-rewired --save-dev
 ```
 
-## Step 2: Create a `config-overrides-js` file in the root directory
+## Create a `config-overrides-js` file in the root directory
 
 The configuration differs slightly based on the version of Create React App you are running.
 
@@ -58,7 +60,7 @@ Your project root should now look like this:
 |   +-- src
 ```
 
-## Step 3: Edit the calls to `react-scripts` in the `scripts` field of your `package.json`
+## Edit the calls to `react-scripts` in the `scripts` field of your `package.json`
 
 In your `package.json`, your `scripts` field should currently look similar to this:
 
@@ -85,6 +87,6 @@ Change the `start` and `build` fields to use `react-app-rewired` like this:
 !!! Note
     Do not use react-app-rewired for the `eject` and `test` scripts.
 
-## Next steps
+--8<-- "snippets/install-last-step-rebuild.md"
 
-[Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)
+

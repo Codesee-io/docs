@@ -1,5 +1,9 @@
 # Configuring CodeSee with Nuxt.js
 
+--8<-- "snippets/install-first-step.md"
+
+## Configure your project
+
 You'll need to edit your `nuxt.config.js` to make sure the "codesee" babel plugin is included when in development mode.
 
 ## Store your config in a variable named `config`
@@ -42,6 +46,4 @@ if (process.env.NODE_ENV !== 'production') {
 export default config;
 ```
 
-## Next step: 
-
-[Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)
+--8<-- "snippets/install-last-step-rebuild.md"

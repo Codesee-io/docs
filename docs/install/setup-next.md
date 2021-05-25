@@ -1,5 +1,9 @@
 # Configuring CodeSee with Next.js
 
+--8<-- "snippets/install-first-step.md"
+
+## Configure your project
+
 We'll be adding CodeSee to your `.babelrc` or `babel.config.js`.
 
 You either need to follow option A or option B. Check the root of your next.js app for a `.babelrc` or `babel.config.js`. 
@@ -7,7 +11,7 @@ You either need to follow option A or option B. Check the root of your next.js a
  - If one already exists, follow [Option B: Add CodeSee to your Babel config](option-b-add-codesee-to-your-babel-config).
 
 
-## Option A: If you don't have a Babel config
+### Option A: If you don't have a Babel config
 
 If you don't have one, let's create a new `babel.config.js` file in the root of your next.js app.
 
@@ -26,7 +30,7 @@ module.exports = {
 
 And that's it! The next time you run your app in development mode, you should see a circle with the CodeSee eye in your webpage.
 
-## Option B: Add CodeSee to your existing Babel config
+### Option B: Add CodeSee to your existing Babel config
 Open your `.babelrc` or `babel.config.js` file, and add the codesee plugin under `env`/`development`. For example, if you started with the default `.babelrc` for next.js:
 
 ```
@@ -52,6 +56,5 @@ then you can add CodeSee with:
 
 And that's it! The next time you run your app in development mode, you should see a circle with the CodeSee eye in your webpage.
 
-## Next step: 
+--8<-- "snippets/install-last-step-rebuild.md"
 
-[Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)

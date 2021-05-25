@@ -1,6 +1,10 @@
 # Generic setup instructions
 Follow these instructions if your project doesn't use one of the other specific environments listed.
 
+--8<-- "snippets/install-first-step.md"
+
+## Configure your project
+
 1. If you don't have [babel compilation](https://babeljs.io/) setup in your app, you will need to add it. Please use [Babel's excellent guide](https://babeljs.io/setup) for getting set-up in your specific environments.
 1. Once you've added your babel setup, add the "codesee" plugin for development. For example, if you have a .babelrc file, add the following to the "env" -> "development" part of your config ("env" goes at the top level):
 ```
@@ -27,8 +31,8 @@ If your project doesn’t include a babel config file (e.g. `.babelrc` or `babel
     },
 ```
 
-## Next step: 
+--8<-- "snippets/install-last-step-rebuild.md"
 
-[Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)
+
 
  

@@ -4,7 +4,7 @@ nav:
     - Introduction: index.md
     - Troubleshooting: troubleshooting.md
   - 🛠 CodeSee installation:
-    - Installation and setup: install/installation.md
+    - Overview: install/index.md
     - Create React App: install/setup-cra.md
     - Typescript without Babel: install/setup-typescript-without-babel.md
     - Next: install/setup-next.md
@@ -35,6 +35,7 @@ theme:
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.tabbed
+  - pymdownx.snippets
   - pymdownx.superfences
   - attr_list
   - admonition

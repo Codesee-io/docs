@@ -1,6 +1,8 @@
 # Configuring CodeSee with Storybook
 This configuration uses a custom storybook preset, which should be compatible with Storybook version 4.0.0 or newer.
 
+--8<-- "snippets/install-first-step.md"
+
 ## Place codesee-storybook-preset.js in your .storybook directory
 
 Copy the following into a new file called `codesee-storybook-preset.js`
@@ -52,6 +54,5 @@ module.exports = {
 }
 ```
 
-## Next step: 
+--8<-- "snippets/install-last-step-rebuild.md"
 
-[Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)

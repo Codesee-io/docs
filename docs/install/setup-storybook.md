@@ -52,6 +52,6 @@ module.exports = {
 }
 ```
 
-## Next steps:
+## Next step: 
 
-[Rebuild and run your app](/install/installation/#step-3-rebuild-and-run-your-app-locally)
+[Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)

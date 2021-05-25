@@ -47,5 +47,5 @@ Rebuild your app, wait a few seconds, and you should see the CodeSee button towa
 
 ## Next steps
 
-* [Using CodeSee](/use/quick-start)
-* [Troubleshooting](/troubleshooting)
+* [Using CodeSee](../../use/quick-start)
+* [Troubleshooting](../../troubleshooting)

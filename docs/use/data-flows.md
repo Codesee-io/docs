@@ -70,14 +70,14 @@ CodeSee shows you the statements in the left most column of the data flow, it sh
 When you hover over the expression in the center column it highlights the expression in the code in the left most column. 
 
 <!-- <iframe src="https://codesee-docs.s3.amazonaws.com/07-highlights.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe> -->
-![code highlights](/img/cs-highlights.gif)
+![code highlights](../../img/cs-highlights.gif)
 
 ### Filtering
 
 If you are overwhelmed by the information presented in the data flow or you want to remove some of the cruft in order to narrow down your focus, you can filter out functions by hovering over the ellipses and clicking Exclude All - Filter out all instances
 
 <!-- <iframe src="https://codesee-docs.s3.amazonaws.com/08-+filtering.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe> -->
-![filtering functions](/img/cs-filter.gif)
+![filtering functions](../../img/cs-filter.gif)
 
 
 

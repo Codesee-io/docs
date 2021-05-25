@@ -1,4 +1,5 @@
 # Generic setup instructions
+
 Follow these instructions if your project doesn't use one of the other specific environments listed.
 
 --8<-- "snippets/install-first-step.md"
@@ -29,6 +30,17 @@ If your project doesn’t include a babel config file (e.g. `.babelrc` or `babel
         //other babel plugins go here
       ],
     },
+```
+
+## Optional config for large or high data applications
+
+If you have a large, enterprise or high data application, we recommend to set the data verbosity to false. By default data verbosity is set to true.
+
+```
+"plugins": [
+   ["@codesee/instrument", { "hosted": true, "verbose": false }],
+   /* ... other dev plugins ... */
+]
 ```
 
 --8<-- "snippets/install-last-step-rebuild.md"

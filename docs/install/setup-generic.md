@@ -29,7 +29,8 @@ If your project doesn’t include a babel config file (e.g. `.babelrc` or `babel
 
 ## Optional Config for Large or High Data Applications:
 
-If you have a large, enterprise or high data application, we recommend to set the data verbosity to `false`. By default data verbosity is set to true. 
+- Verbose mode: Gets all of the runtime data but will take your recording a little longer to process.
+- Terse mode: Shows you a little less runtime data but your recordings will be more performant. If you have a large, enterprise or high data application, we recommend to set the data verbosity to `false`. By default data verbosity is set to true. Setting the mode here will set the default mode for all users however, 
 
 ```
 "plugins": [

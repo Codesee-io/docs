@@ -1,22 +1,24 @@
 # Configuring CodeSee with Create React App
 
-We're going to add [React App Rewired](https://github.com/timarney/react-app-rewired) following the instructions below. Please note that these instructions are slightly different than the ones on the react-app-rewired site. But, if you already have react-app-rewired installed, nothing to worry about here, you can skip to "Step 2) Create a config-overrides.js file".
+CodeSee supports Create React App 2.x or newer. If you're not sure what version you are using, you can check your `package.json` for the `react-scripts` dependency: its version is the same as your Create React App version.
+
+You need to add [React App Rewired](https://github.com/timarney/react-app-rewired) to your project. Note that these instructions are slightly different to the ones on the react-app-rewired site. If you already have react-app-rewired installed, you can skip to [Step 2: Create a `config-overrides.js` file in the root directory](#step-2-create-a-config-overrides-js-file-in-the-root-directory).
+
+--8<-- "snippets/install-first-step.md"
 
 ## Install react-app-rewired
 
-CodeSee supports Create React App 2.x or newer. If you're not sure what version you are using, you can check your package.json for the react-scripts dependency: its version is the same as your Create React App version!
-
-```bash
+```shell
 $ npm install react-app-rewired --save-dev
 ```
 
-## Create a `config-overrides.js` file in the root directory
+## Create a `config-overrides-js` file in the root directory
 
 The configuration differs slightly based on the version of Create React App you are running.
 
-=== "Version 4.x.x"
+=== "Version 4.x"
 
-    ```
+    ```js
     const webpack = require("webpack");
 
     module.exports = function override(config, env) {
@@ -30,9 +32,9 @@ The configuration differs slightly based on the version of Create React App you 
     }
     ```
 
-=== "Version 3.x.x and 2.x.x"
+=== "Version 3.x and 2.x"
 
-    ```
+    ```js
     const webpack = require("webpack");
 
     module.exports = function override(config, env) {
@@ -46,9 +48,9 @@ The configuration differs slightly based on the version of Create React App you 
     }
     ```
 
+Your project root should now look like this:
 
-
-```
+```yaml
 +-- your-project
 |   +-- config-overrides.js
 |   +-- node_modules
@@ -58,13 +60,11 @@ The configuration differs slightly based on the version of Create React App you 
 |   +-- src
 ```
 
-## 'Flip' the calls to `react-scripts` in the `scripts` field of your `package.json`
+## Edit the calls to `react-scripts` in the `scripts` field of your `package.json`
 
-In your package.json, your current `scripts` field should *currently* look a lot like this:
+In your `package.json`, your `scripts` field should currently look similar to this:
 
-```
-  /* package.json */
-
+```json
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -73,11 +73,9 @@ In your package.json, your current `scripts` field should *currently* look a lot
 }
 ```
 
-Please change the `start` and `build` field to use `react-app-rewired` like this:
+Change the `start` and `build` fields to use `react-app-rewired` like this:
 
-```
-  /* package.json */
-
+```json
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
@@ -86,8 +84,9 @@ Please change the `start` and `build` field to use `react-app-rewired` like this
 }
 ```
 
-Note: Please avoid setting this call for the `eject` and `test` scripts.
+!!! Note
+    Do not use react-app-rewired for the `eject` and `test` scripts.
 
-## Next step: 
+--8<-- "snippets/install-last-step-rebuild.md"
 
-[Rebuild and run your app](../installation/#step-3-rebuild-and-run-your-app-locally)
+

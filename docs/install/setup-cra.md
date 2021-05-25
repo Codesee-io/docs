@@ -87,6 +87,8 @@ Change the `start` and `build` fields to use `react-app-rewired` like this:
 !!! Note
     Do not use react-app-rewired for the `eject` and `test` scripts.
 
+--8<-- "snippets/config-large-high-data.md"
+
 --8<-- "snippets/install-last-step-rebuild.md"
 
 

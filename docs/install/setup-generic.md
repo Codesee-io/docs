@@ -35,27 +35,8 @@ If your project doesn’t include a Babel config file (for example, `.babelrc` o
 ```
 
 
-## Optional Config for Large or High Data Applications:
 
-```
-verbose: boolean
-```
-
-By default, CodeSee instruments your code in order to record the data value of every expression. This always results in the application running slower while recording, and in rare circumstances, it can cause a noticeable slow down even when not recording. If this slowdown is happening in your application, you can configure CodeSee in `verbose: false` (or terse) mode. CodeSee will instrument your code less and capture less data (just the inputs and outputs of functions), but continue to provide the same tracing, side effects, and visualizations as always.
-
-- Verbose mode (default): Gets all of the runtime data but in some applications or recordings can cause a noticeable slowdown.
-- Terse mode: Captures less runtime data, but your recordings will be more performant. If you have a high data application, or are noticing slowdown, we recommend you try setting `verbose: false`.
-
-Note: this setting is for all developers of the application, and changing it will require a clean build.
-
-
-```
-"plugins": [
-   ["@codesee/instrument", { "hosted": true, "verbose": false }],
-   /* ... other dev plugins ... */
-]
-```
-
+--8<-- "snippets/config-large-high-data.md"
 
 --8<-- "snippets/install-last-step-rebuild.md"
 

@@ -102,5 +102,7 @@ And your program should be running the same as always, but with a purple CodeSee
 
 You'll probably want to add `codesee/` to your `.gitignore` file, so you don't accidentally commit any of the Babel build products from the `/codesee` directory.
 
+--8<-- "snippets/config-large-high-data.md"
+
 --8<-- "snippets/install-last-step-rebuild.md"
 

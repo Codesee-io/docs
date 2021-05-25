@@ -57,5 +57,7 @@ then you can add CodeSee with:
 
 And that's it! The next time you run your app in development mode, you should see a circle with the CodeSee eye in your webpage.
 
+--8<-- "snippets/config-large-high-data.md"
+
 --8<-- "snippets/install-last-step-rebuild.md"
 

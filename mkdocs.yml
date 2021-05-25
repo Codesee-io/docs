@@ -26,7 +26,7 @@ nav:
     - Using Data Flows: use/data-flows.md
     - Using Stories: use/stories.md
   - ❓ Need help?:
-    - Contact us: help/need-help.md
+    - Contact us: help/contact.md
     - Browser compatibility and configuration: help/browser-setup.md 
 theme:
   name: material

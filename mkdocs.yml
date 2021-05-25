@@ -2,7 +2,6 @@ site_name: CodeSee Beta
 nav:
   - 👋 Welcome:
     - Introduction: index.md
-    - Troubleshooting: troubleshooting.md
   - 🛠 CodeSee installation:
     - Overview: install/overview.md
     - Create React App: install/setup-cra.md
@@ -26,6 +25,9 @@ nav:
     - When to use CodeSee: use/use-cases.md
     - Using Data Flows: use/data-flows.md
     - Using Stories: use/stories.md
+  - ❓ Need help?:
+    - Contact us: help/need-help.md
+    - Browser compatibility and configuration: help/browser-setup.md 
 theme:
   name: material
   favicon: img/favicon-32x32.png

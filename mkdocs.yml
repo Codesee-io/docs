@@ -1,7 +1,7 @@
 site_name: CodeSee Beta
 nav:
   - 👋 Welcome:
-    - Introduction: home.md
+    - Introduction: index.md
     - Troubleshooting: troubleshooting.md
   - 🛠 CodeSee installation:
     - Overview: install/overview.md

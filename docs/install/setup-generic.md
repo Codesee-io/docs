@@ -29,8 +29,16 @@ If your project doesn’t include a babel config file (e.g. `.babelrc` or `babel
 
 ## Optional Config for Large or High Data Applications:
 
-- Verbose mode: Gets all of the runtime data but will take your recording a little longer to process.
-- Terse mode: Shows you a little less runtime data but your recordings will be more performant. If you have a large, enterprise or high data application, we recommend to set the data verbosity to `false`. By default data verbosity is set to true. Setting the mode here will set the default mode for all users however, 
+```
+verbose: boolean
+```
+
+By default, CodeSee instruments your code in order to record the data value of every expression. This always results in the application running slower while recording, and in rare circumstances, it can cause a noticeable slow down even when not recording. If this slowdown is happening in your application, you can configure CodeSee in `verbose: false` (or terse) mode. CodeSee will instrument your code less and capture less data (just the inputs and outputs of functions), but continue to provide the same tracing, side effects, and visualizations as always.
+
+- Verbose mode (default): Gets all of the runtime data but in some applications or recordings can cause a noticeable slowdown.
+- Terse mode: Captures less runtime data, but your recordings will be more performant. If you have a high data application, or are noticing slowdown, we recommend you try setting `verbose: false`.
+
+Note: this setting is for all developers of the application, and changing it will require a clean build.
 
 ```
 "plugins": [

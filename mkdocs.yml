@@ -26,8 +26,8 @@ nav:
     - Using Data Flows: use/data-flows.md
     - Using Stories: use/stories.md
   - ❓ Need help?:
-    - Contact us: help/contact.md
     - Browser compatibility and configuration: help/browser-setup.md 
+    - Contact us: help/contact.md    
 theme:
   name: material
   favicon: img/favicon-32x32.png

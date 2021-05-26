@@ -18,7 +18,7 @@ Next, choose how much data you'd like to see in your recording.
 - Verbose mode: Gets all of the runtime data but will take your recording a little longer to process. 
 - Terse mode: Shows you a little less runtime data but your recordings will be more performant.
 
-If you have a large application or a data heavy application, we recommend terse mode. If you prefer to use verbose mode, it helps to keep recordings as short as possible – focus on the one interaction you want to understand better. 
+Verbose mode is the default and we recommend starting out in verbose mode as it provides you with the most insight into your application. If you have a large application, a data heavy application, or experience any performance declines, try terse mode. If you prefer to use verbose mode with a large or data heavy application, it helps to keep recordings as short as possible – focus on the one interaction you want to understand better. 
 
 When you finish recording, CodeSee will open a new tab for your recording once all the data has been transmitted. Larger recordings or slower networks can cause some buffering, so please wait for it to finish sending the recording to our servers.
 

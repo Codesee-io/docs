@@ -46,4 +46,6 @@ if (process.env.NODE_ENV !== 'production') {
 export default config;
 ```
 
+--8<-- "snippets/config-large-high-data.md"
+
 --8<-- "snippets/install-last-step-rebuild.md"

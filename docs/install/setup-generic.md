@@ -35,18 +35,8 @@ If your project doesn’t include a Babel config file (for example, `.babelrc` o
 ```
 
 
-## Optional Config for Large or High Data Applications:
 
-If you have a large, enterprise or high data application, we recommend to set the data verbosity to `false`. By default data verbosity is set to true. 
-
-
-```
-"plugins": [
-   ["@codesee/instrument", { "hosted": true, "verbose": false }],
-   /* ... other dev plugins ... */
-]
-```
-
+--8<-- "snippets/config-large-high-data.md"
 
 --8<-- "snippets/install-last-step-rebuild.md"
 

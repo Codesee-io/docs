@@ -19,8 +19,6 @@ The configuration differs slightly based on the version of Create React App you 
 === "Version 4.x"
 
     ```js
-    const webpack = require("webpack");
-
     module.exports = function override(config, env) {
       // add CodeSee babel plugin
       if (env === 'development') {
@@ -35,8 +33,6 @@ The configuration differs slightly based on the version of Create React App you 
 === "Version 3.x and 2.x"
 
     ```js
-    const webpack = require("webpack");
-
     module.exports = function override(config, env) {
       // add CodeSee babel plugin
       if (env === 'development') {

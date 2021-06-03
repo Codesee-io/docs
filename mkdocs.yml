@@ -30,6 +30,7 @@ nav:
     - Contact us: help/contact.md    
 theme:
   name: material
+  logo: img/CS_avatar_square_2_color.png
   favicon: img/favicon-32x32.png
   custom_dir: overrides
   features:

@@ -11,9 +11,9 @@ You need to modify your Babel config, and import `@codesee/tracker`, both of whi
 
 Note that:
 
-1. CodeSee detects development mode.
-2. CodeSee constructs an object that is your Babel options, and passes that into the EmberApp constructor. Then, only in development mode, we add `@codesee/instrument` to the list of Babel plugins, along with the `frameworks: ["ember"]` option.
-3. Only in development mode, we use `app.import` to load the `@codesee/tracker/build/codesee.web.hosted.js` npm package. For a local install, import `@codesee/tracker/build/codesee.web.js` instead.
+* CodeSee detects development mode.
+* CodeSee constructs an object that is your Babel options, and passes that into the EmberApp constructor. Then, only in development mode, we add `@codesee/instrument` to the list of Babel plugins, along with the `frameworks: ["ember"]` option.
+* Only in development mode, we use `app.import` to load the `@codesee/tracker/build/codesee.web.hosted.js` npm package. For a local install, import `@codesee/tracker/build/codesee.web.js` instead.
 
 ```js
 module.exports = function (defaults) {

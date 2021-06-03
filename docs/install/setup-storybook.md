@@ -1,9 +1,9 @@
 # Configuring CodeSee with Storybook
-This configuration uses a custom storybook preset, which should be compatible with Storybook version 4.0.0 or newer.
+This configuration uses a custom Storybook preset, which should be compatible with Storybook version 4.0.0 or newer.
 
 --8<-- "snippets/install-first-step.md"
 
-## Place `codesee-storybook-preset.js` in your `.storybook` directory
+## Create `codesee-storybook-preset.js` in your `.storybook` directory
 
 Copy the following into a new file called `codesee-storybook-preset.js` inside your `.storybook` directory:
 

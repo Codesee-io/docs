@@ -6,7 +6,7 @@
 
 You need to edit your `nuxt.config.js` to make sure the `codesee` Babel plugin is included when in development mode.
 
-## Store your config in a variable named `config`
+### Store your config in a variable named `config`
 
 That is, change from:
 
@@ -26,7 +26,7 @@ const config = {
 export default config;
 ```
 
-## Edit your config to ensure CodeSee runs when your app is run in development mode
+### Edit your config to ensure CodeSee runs when your app is run in development mode
 
 The new code goes just before the `export default config;` line.
 

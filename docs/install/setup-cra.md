@@ -23,6 +23,8 @@ The configuration differs slightly based on the version of Create React App you 
       // add CodeSee babel plugin
       if (env === 'development') {
         const babelLoaderConfig = config.module.rules[1].oneOf[2];
+        // Set hosted: true when using CodeSee Hosted. 
+        // This parameter defaults to false, so you can leave it out if using CodeSee Local.
         babelLoaderConfig.options.plugins.push(["@codesee/instrument", { hosted: true }]);
       }
 

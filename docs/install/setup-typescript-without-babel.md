@@ -33,7 +33,9 @@ In the root of your project, create a `.babelrc` file with the following:
   "plugins": [
     "@babel/proposal-class-properties",
     "@babel/proposal-object-rest-spread",
-    ["@codesee/instrument", { hosted: true }]
+    // Set hosted: true when using CodeSee Hosted. 
+    // This parameter defaults to false, so you can leave it out if using CodeSee Local.
+    ["@codesee/instrument", { "hosted": true }]
   ]
 }
 ```

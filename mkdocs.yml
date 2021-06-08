@@ -18,7 +18,7 @@ nav:
     - Introducing CodeSee Local: local/introduction.md
     - Running CodeSee locally: local/local.md
     - Upgrading CodeSee Local: local/upgrade-local-version.md
-    - Changing from CodeSee Local to hosted CodeSee: local/hosted.md  
+    - Changing from CodeSee Local to CodeSee Hosted: local/hosted.md  
   - 🚀 Using CodeSee:
     - Quick start guide: use/quick-start.md
     - Configuration options: use/options.md

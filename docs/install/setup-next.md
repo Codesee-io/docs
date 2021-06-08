@@ -23,6 +23,8 @@ module.exports = {
   "plugins": [],
   "env": {
     "development": {
+      // Set hosted: true when using CodeSee Hosted. 
+      // This parameter defaults to false, so you can leave it out if using CodeSee Local.
       "plugins": [["@codesee/instrument", {"hosted": true}]]
     }
   }

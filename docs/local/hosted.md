@@ -10,13 +10,13 @@ Update the `devDependencies` in your `packages.json` file to reflect the current
 
 === "npm"
 
-    ```
+    ```shell
     npm install --save-dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
     ```
 
 === "yarn"
 
-    ```
+    ```shell
     yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
     ```
 

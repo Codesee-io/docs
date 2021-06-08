@@ -9,7 +9,7 @@ CodeSee is offered as a hosted service, but you can also run it locally on your 
     - my-app/
     - codesee-alpha/
   ```
-  ```
+  ```shell
   git clone git@github.com:Codesee-io/codesee-alpha.git --depth=1
   ```
 
@@ -27,6 +27,6 @@ Please follow our instructions on [installing CodeSee](../../install/installatio
 
 !!! note
     You must set `hosted` to `false` during setup. For example:
-    ```
+    ```js
     babelLoaderConfig.options.plugins.push(["@codesee/instrument", { hosted: false }]);
     ```

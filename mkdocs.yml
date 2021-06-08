@@ -20,11 +20,11 @@ nav:
     - Running CodeSee on the backend: local/backend.md
     - Changing from local to hosted CodeSee: local/hosted.md  
   - 🚀 Using CodeSee:
-    - Quick start guide: use/quick-start.md
+    - Overview and concepts: use/overview.md
     - Configuration options: use/options.md
-    - When to use CodeSee: use/use-cases.md
     - Using Data Flows: use/data-flows.md
     - Using Stories: use/stories.md
+    - Use cases: use/use-cases.md
   - ❓ Need help?:
     - Browser compatibility and configuration: help/browser-setup.md 
     - Contact us: help/contact.md    

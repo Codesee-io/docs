@@ -26,7 +26,7 @@ module.exports = function (defaults) {
   // Adds CodeSee instrumentation, but only in development mode
   if (isDevelopment) {
     babel.plugins = babel.plugins || [];
-    babel.plugins.push( ["@codesee/instrument", {frameworks: ["ember"]}] );
+    babel.plugins.push( ["@codesee/instrument", {frameworks: ["ember"], hosted: true}] );
   }
 
   let app = new EmberApp(defaults, {

@@ -40,7 +40,7 @@ An example of a final `main.js` would look something like the following:
 const path = require('path');
 
 module.exports = {
-  "Stories": [
+  "stories": [
     "../src/**/*.Stories.mdx",
     "../src/**/*.Stories.@(js|jsx|ts|tsx)"
   ],

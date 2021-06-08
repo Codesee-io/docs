@@ -1,4 +1,4 @@
-# Configuring CodeSee with a TypeScript project that doesn't use Babel
+# Configuring CodeSee with a TypeScript project that doesn't currently use Babel
 
 In these instructions, we describe how to set up a parallel build system using Babel so that your existing flow is unchanged. You can continue to use `tsc` to compile and run your TypeScript files the same as you've always done. You will add new `build:codesee` and `run:codesee` commands to your `package.json` specifically for CodeSee. They build your project and put the resulting artifacts into the `/codesee` directory.
 
@@ -6,7 +6,7 @@ In these instructions, we describe how to set up a parallel build system using B
 
 ## Install packages
 
-You need to install the packages needed for Babel. This allows you to convert your TypeScript code into JavaScript using Babel.
+Install the packages needed for Babel. This allows you to convert your TypeScript code into JavaScript using Babel.
 
 === "npm"
 
@@ -43,7 +43,7 @@ In the root of your project, create a `.babelrc` file with the following:
 1. Add the following line to the `scripts` section of your `package.json`.
 
   ``` json
-  `"build:codesee": "./node_modules/.bin/babel ./<your-top-level-dir> --out-dir ./codesee --extensions '.ts' --source-maps inline",`
+  "build:codesee": "./node_modules/.bin/babel ./<your-top-level-dir> --out-dir ./codesee --extensions '.ts' --source-maps inline",
   ```
 
   Replace `<your-top-level-dir>` with the top-level directory where your source code is stored.

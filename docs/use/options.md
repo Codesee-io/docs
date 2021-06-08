@@ -15,7 +15,7 @@ plugins: [
 
 ## **`includeLibs`**
 
-By default, CodeSee avoids instrumenting library code imported into your app. However, if you want to see CodeSee data flows that include your framework, we are beginning to support that. Add the `includeLibs` option to the `@codesee/instrument` plugin configuration:
+By default, CodeSee avoids instrumenting library code imported into your app. However, if you want to see CodeSee Data Flows that include your framework, we are beginning to support that. Add the `includeLibs` option to the `@codesee/instrument` plugin configuration:
 
 ```js
 plugins: [

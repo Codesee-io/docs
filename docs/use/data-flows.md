@@ -1,6 +1,6 @@
-# Getting started With CodeSee: anatomy of a data flow
+# Getting started With CodeSee: anatomy of a Data Flow
 
-When you record an interaction with CodeSee, you create a Data Flow. A data flow is a detailed view of every line of the code that ran in that interaction.   
+When you record an interaction with CodeSee, you create a Data Flow. A Data Flow is a detailed view of every line of the code that ran in that interaction.   
 
 ## Icon legend
 
@@ -24,7 +24,7 @@ If there is a loop, whether it’s an explicit loop like a `for` loop or an impl
 
 ## Execution order
 
-The CodeSee data flow is laid out in code execution order, meaning that it shows what order each function was called in regardless of what file the function is located in.
+The CodeSee Data Flow is laid out in code execution order, meaning that it shows what order each function was called in regardless of what file the function is located in.
 
 ## Runtime data
 
@@ -40,7 +40,7 @@ Most dev tools are organized in files and folders. Normally, to understand what'
 
 ## Call stack
 
-When you are exploring a data flow, the current function that you are exploring sticks to the top so you are always aware which line of code is part of which function. When that function is about to scroll off screen, we show you where the function ends. If you have nested functions, we show you the end of each function. 
+When you are exploring a Data Flow, the current function that you are exploring sticks to the top so you are always aware which line of code is part of which function. When that function is about to scroll off screen, we show you where the function ends. If you have nested functions, we show you the end of each function. 
 
 <iframe src="https://codesee-docs.s3.amazonaws.com/05-Call+Stack.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe>
 
@@ -64,7 +64,7 @@ JavaScript distinguishes expressions and statements. An expression produces a va
     
 Roughly, a statement performs an action. Loops and `if` statements are examples of statements. A program is basically a sequence of statements (we're ignoring declarations here). Wherever JavaScript expects a statement, you can also write an expression. Such a statement is called an expression statement. The reverse does not hold: you cannot write a statement where JavaScript expects an expression. For example, an `if` statement cannot become the argument of a function. 
 
-CodeSee shows you the statements in the left most column of the data flow, the expressions in the center column, and the value of each of the expressions at the time the recording was made in the right most column.
+CodeSee shows you the statements in the left most column of the Data Flow, the expressions in the center column, and the value of each of the expressions at the time the recording was made in the right most column.
 
 ## Code highlights
 
@@ -75,7 +75,7 @@ When you hover over the expression in the center column it highlights the expres
 
 ## Filtering
 
-If you are overwhelmed by the information presented in the data flow or you want to remove some of the cruft in order to narrow down your focus, you can filter out functions by hovering over the ellipses and selecting **Exclude All - Filter out all instances**.
+If you are overwhelmed by the information presented in the Data Flow or you want to remove some of the cruft in order to narrow down your focus, you can filter out functions by hovering over the ellipses and selecting **Exclude All - Filter out all instances**.
 
 <!-- <iframe src="https://codesee-docs.s3.amazonaws.com/08-+filtering.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe> -->
 ![filtering functions](../../img/cs-filter.gif)

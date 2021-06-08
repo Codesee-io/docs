@@ -40,9 +40,9 @@ An example of a final `main.js` would look something like the following:
 const path = require('path');
 
 module.exports = {
-  "stories": [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+  "Stories": [
+    "../src/**/*.Stories.mdx",
+    "../src/**/*.Stories.@(js|jsx|ts|tsx)"
   ],
   "addons": [
     path.resolve("./.storybook/codesee-storybook-preset.js"),

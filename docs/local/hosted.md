@@ -1,31 +1,34 @@
-# Changing from local to hosted CodeSee
+# Changing from CodeSee Local to CodeSee Hosted
 
-If you're running CodeSee locally but want to use the hosted option instead, you'll need to upgrade your version of CodeSee in slightly different ways, depending on what file your Babel intergration is in.
+If you're running CodeSee locally but want to use the hosted option instead, you need to upgrade your version of CodeSee in slightly different ways, depending on what file your Babel intergration is in.
 
-While this process will not delete any previous CodeSee recordings, you'll need to switch back to the local hosted option to access recordings previously recorded with CodeSee Local.
+While this process does not delete any previous CodeSee recordings, you'll need to switch back to the local hosted option to access recordings previously recorded with CodeSee Local.
 
 ## Update the CodeSee dependencies
 
-Update the devDependencies in your `packages.json` file to reflect the current CodeSee version. You can run either of these commands to update:
+Update the `devDependencies` in your `packages.json` file to reflect the current CodeSee version. You can run either of these commands to update:
 
 === "npm"
 
-    ```
+    ```shell
     npm install --save-dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
     ```
 
 === "yarn"
 
-    ```
+    ```shell
     yarn add --dev @codesee/tracker@latest @codesee/babel-plugin-instrument@latest
     ```
 
 ## Update the CodeSee tooling declaration
 
 ### Updating with Create React App
-If you're using CodeSee with a Create React App application, you'll make these changes in the `config-overrides.js` file. Before updating, your `config-overrides.js` file should look something like this:
 
-```
+If you're using CodeSee with a Create React App application, make these changes in the `config-overrides.js` file. 
+
+Before updating, your `config-overrides.js` file should look something like this:
+
+```js
 module.exports = function override(config, env) {
   // add CodeSee babel plugin
   if (env === 'development') {
@@ -36,9 +39,9 @@ module.exports = function override(config, env) {
 }
 ```
 
-Alter this text to add `{hosted: true}` to your CodeSee plugin. If `“@codesee/instrument”` is not currently wrapped in its own array in your file, you will need to do so, as shown below. If it is already wrapped in its own array as shown here `[“@codesee/instrument”]`, please add `{hosted: true}` to the array as shown below.
+Alter this code to add `{hosted: true}` to your CodeSee plugin:
 
-```
+```js
 module.exports = function override(config, env) {
   // add CodeSee babel plugin
   if (env === 'development') {
@@ -48,12 +51,12 @@ module.exports = function override(config, env) {
   return config;
 }
 ```
+
 ### Updating other application types
 
-Navigate to the file that you've added your CodeSee plugin to. You can search for `"@codesee/instrument"` to quickly find the correct file. For example, if you've added CodeSee to your `.babelrc` file, open your `.babelrc` file. It should contain text that looks similar to this.
+Navigate to the file that you've added your CodeSee plugin to. You can search for `"@codesee/instrument"` to quickly find the correct file. For example, if you've added CodeSee to your `.babelrc` file, open your `.babelrc` file. It should contain text that looks similar to this:
 
-
-```
+```json
   "env": {
     "development": {
       "plugins": [
@@ -64,9 +67,9 @@ Navigate to the file that you've added your CodeSee plugin to. You can search fo
   }
 ```
 
-Alter this text to add `{hosted: true}` to your CodeSee plugin. If `“@codesee/instrument”` is not currently wrapped in its own array in your file, you will need to do so, as shown below. If it is already wrapped in its own array as shown here `[“@codesee/instrument”]`, please add `{hosted: true}` to the array as shown below.
+Alter this text to add `{hosted: true}` to your CodeSee plugin:
 
-```
+```json
   "env": {
     "development": {
       "plugins": [
@@ -79,15 +82,14 @@ Alter this text to add `{hosted: true}` to your CodeSee plugin. If `“@codesee/
 
 ## Reset localStorage
 
-You'll next need to clear `localStorage`. Open your application in your browser, making sure that the CodeSee floating action button is visible:
+You need to clear `localStorage`. 
 
-![CodeSee button running in web app](../../img/codesee_button.png)
-
-Right click on any point of your application in your browser and select inspect, to open Chrome developement tools.
-
-Click on the Application option in your Chrome development tools. Then navigate to your local storage option in the left hand navigation menu.
-
-Look for `http://localhost:5198`, right click on it and choose clear:
+1. Open your application in your browser, making sure that the CodeSee floating action button is visible:
+  ![CodeSee button running in web app](../../img/codesee_button.png)
+2. Open Chrome developement tools. You can do this through the appropriate keyboard shortcut for your system, or by right-clicking on the page and selecting **Inspect Element**.
+3. Select the **Application** tab in your Chrome development tools. 
+4. Browse to **Local Storage** in the left hand navigation menu.
+5. Find **http://localhost:5198**, right click on it, and choose **Clear**.
 
 ![Resetting local storage in Chrome DevTools](../../img/remove_local_storage.png)
  

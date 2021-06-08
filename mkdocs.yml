@@ -12,13 +12,13 @@ nav:
     - Gatsby: install/setup-gatsby.md
     - Ember: install/setup-ember.md
     - Generic setup: install/setup-generic.md
+    - Running CodeSee in backend apps: install/backend.md
     - Upgrading your installation: install/upgrade-hosted-version.md
   - ⚙️ CodeSee Local:
     - Introducing CodeSee Local: local/introduction.md
     - Running CodeSee locally: local/local.md
-    - Upgrading local: local/upgrade-local-version.md
-    - Running CodeSee on the backend: local/backend.md
-    - Changing from local to hosted CodeSee: local/hosted.md  
+    - Upgrading CodeSee Local: local/upgrade-local-version.md
+    - Changing from CodeSee Local to CodeSee Hosted: local/hosted.md  
   - 🚀 Using CodeSee:
     - Quick start guide: use/quick-start.md
     - Configuration options: use/options.md

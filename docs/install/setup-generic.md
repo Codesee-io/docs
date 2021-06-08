@@ -13,6 +13,8 @@ Follow these instructions if your project doesn't use one of the other specific 
   "env": {
     "development": {
       "plugins": [
+        // Set hosted: true when using CodeSee Hosted. 
+        // This parameter defaults to false, so you can leave it out if using CodeSee Local.
         ["@codesee/instrument", { "hosted": true }],
         /* ... other dev plugins ... */
       ]

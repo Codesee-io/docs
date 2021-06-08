@@ -36,6 +36,8 @@ In your `nuxt.config.js`:
 if (process.env.NODE_ENV !== 'production') {
   const babel = config.build.babel = config.build.babel || {};
   const plugins = babel.plugins = babel.plugins || [];
+  // Set hosted: true when using CodeSee Hosted. 
+  // This parameter defaults to false, so you can leave it out if using CodeSee Local.
   plugins.push(['@codesee/instrument', { hosted: true }]);
 
   const render = config.render = config.render || {};

@@ -12,6 +12,8 @@ module.exports = {
   babel: async (config, options) => {
     if (options.configType === "DEVELOPMENT") {
       const plugins = config.plugins = config.plugins || [];
+      // Set hosted: true when using CodeSee Hosted. 
+      // This parameter defaults to false, so you can leave it out if using CodeSee Local.
       plugins.push(['@codesee/instrument', { hosted: true }]);
     }
     return config;

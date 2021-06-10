@@ -15,22 +15,22 @@ Following these instructions, you will:
 
 Follow the links below to set up CodeSee for your specific project environment:
 
-- [Create React App](https://docs.codesee.io/en/latest/install/setup-cra.html)
-- [Typescript, but without Babel](https://docs.codesee.io/en/latest/install/setup-typescript-without-babel.html)
-- [Next](https://docs.codesee.io/en/latest/install/setup-next.html)
-- [Nuxt](https://docs.codesee.io/en/latest/install/setup-nuxt.html)
-- [Storybook](https://docs.codesee.io/en/latest/install/setup-storybook.html)
-- [Gatsby](https://docs.codesee.io/en/latest/install/setup-gatsby.html)
-- [Ember](https://docs.codesee.io/en/latest/install/setup-ember.html)
+- [Create React App](./setup-cra.md)
+- [Typescript, but without Babel](./setup-typescript-without-babel.html)
+- [Next](./setup-next.md)
+- [Nuxt](./setup-nuxt.md)
+- [Storybook](./setup-storybook.md)
+- [Gatsby](./setup-gatsby.md)
+- [Ember](./setup-ember.md)
 
 Or, select generic setup if you use Typescript with Babel, or another framework not listed above:
 
-- [Generic setup](https://docs.codesee.io/en/latest/install/setup-generic.html)
+- [Generic setup](./setup-generic.md)
 
 
 --8<-- "snippets/install-last-step-rebuild.md"
 
 ## Next steps
 
-* [Using CodeSee](https://docs.codesee.io/en/latest/use/quick-start.html)
-* [Troubleshooting](https://docs.codesee.io/en/latest/help/browser-setup.html)
+* [Using CodeSee](../use/quick-start.md)
+* [Troubleshooting](../help/browser-setup.md)

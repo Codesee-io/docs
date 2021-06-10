@@ -2,7 +2,7 @@
 
 CodeSee supports Create React App 2.x or newer. If you're not sure what version you are using, you can check your `package.json` for the `react-scripts` dependency: its version is the same as your Create React App version.
 
-You need to add [React App Rewired](https://github.com/timarney/react-app-rewired) to your project. Note that these instructions are slightly different to the ones on the react-app-rewired site. If you already have react-app-rewired installed, you can skip to [Step 2: Create a `config-overrides.js` file in the root directory](#step-2-create-a-config-overrides-js-file-in-the-root-directory).
+You need to add [React App Rewired](https://github.com/timarney/react-app-rewired) to your project. Note that these instructions are slightly different to the ones on the react-app-rewired site. If you already have react-app-rewired installed, you can skip to [Step 2: Create a `config-overrides.js` file in the root directory](#create-a-config-overrides-js-file-in-the-root-directory).
 
 --8<-- "snippets/install-first-step.md"
 

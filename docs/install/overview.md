@@ -32,5 +32,5 @@ Or, select generic setup if you use Typescript with Babel, or another framework 
 
 ## Next steps
 
-* [Using CodeSee](../../use/quick-start)
-* [Troubleshooting](../../troubleshooting)
+* [Using CodeSee](https://docs.codesee.io/en/latest/use/quick-start.html)
+* [Troubleshooting](https://docs.codesee.io/en/latest/help/browser-setup.html)

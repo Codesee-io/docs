@@ -4,7 +4,7 @@ Here's an overview to the primary features of CodeSee, including recordings, dat
 
 ## Making recordings with the CodeSee button
 <p class="block">
-  <img alt="CodeSee button in browser" src="../../img/codesee_in_browser@2x.png" width="244" height="162" align="right">
+  <img alt="CodeSee button in browser" src="../img/codesee_in_browser@2x.png" width="244" height="162" align="right">
 </p>
 
 If you see the CodeSee button when you run your app locally, you're ready to start using CodeSee.
@@ -15,10 +15,10 @@ If you see the CodeSee button when you run your app locally, you're ready to sta
 
 Next, choose how much data you'd like to see in your recording.
 
-- Verbose mode: Gets all of the runtime data but will take your recording a little longer to process. 
+- Verbose mode: Gets all of the runtime data but will take your recording a little longer to process.
 - Terse mode: Shows you a little less runtime data but your recordings will be more performant.
 
-Verbose mode is the default and we recommend starting out in verbose mode as it provides you with the most insight into your application. If you have a large application, a data heavy application, or experience any performance declines, try terse mode. If you prefer to use verbose mode with a large or data heavy application, it helps to keep recordings as short as possible – focus on the one interaction you want to understand better. 
+Verbose mode is the default and we recommend starting out in verbose mode as it provides you with the most insight into your application. If you have a large application, a data heavy application, or experience any performance declines, try terse mode. If you prefer to use verbose mode with a large or data heavy application, it helps to keep recordings as short as possible – focus on the one interaction you want to understand better.
 
 When you finish recording, CodeSee will open a new tab for your recording once all the data has been transmitted. Larger recordings or slower networks can cause some buffering, so please wait for it to finish sending the recording to our servers.
 
@@ -28,7 +28,7 @@ When you finish recording, CodeSee will open a new tab for your recording once a
 
 A data flow is a detailed timeline view of the code that ran during a CodeSee recording. The data flow is laid out in code execution order, meaning that it shows what order each function was called in regardless of what file the function is located in.
 
-![CodeSee data flow](../../img/data_flow.png)
+![CodeSee data flow](../img/data_flow.png)
 
 **Source code**
 

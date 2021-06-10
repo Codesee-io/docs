@@ -6,10 +6,10 @@
 
 You need to add CodeSee to your `.babelrc` or `babel.config.js`.
 
-You either need to follow option A or option B. Check the root of your Next.js app for a `.babelrc` or `babel.config.js`. 
+You either need to follow option A or option B. Check the root of your Next.js app for a `.babelrc` or `babel.config.js`.
 
 * If none exists, follow [Option A: If you don't have a Babel config](#option-a-if-you-dont-have-a-babel-config).
-* If one already exists, follow [Option B: Add CodeSee to your Babel config](option-b-add-codesee-to-your-babel-config).
+* If one already exists, follow [Option B: Add CodeSee to your Babel config](#option-b-add-codesee-to-your-babel-config).
 
 
 ### Option A: If you don't have a Babel config

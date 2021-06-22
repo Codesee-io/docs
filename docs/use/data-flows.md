@@ -9,11 +9,39 @@ When you record an interaction with CodeSee you create a Data Flow. A data flow 
 - ![Function Name and Path](https://codesee-docs.s3.amazonaws.com/network.png) - Network Request: Indicates a network request
 - ![Function Name and Path](https://codesee-docs.s3.amazonaws.com/state_change2.png) - State Change: Indicates a React state change
 
+### Execution Order
 
-### Code that ran
+The CodeSee Data Flow is laid out in code execution order meaning that it shows what order each function was called in regardless of what file the function is located in.
+
+### Code That Ran
 The function name is located at the top left and the file path is located to the right of the function name
 
 ![Function Name and Path](https://codesee-docs.s3.amazonaws.com/01+-+Function+name+and+path.png)
+
+### User Events on the Timeline
+
+‍Every time you interact with your app via the mouse or keyboard, you can see what operations were triggered. Use the arrows to jump quickly to the next user interaction in the recording.
+
+![User events in the timeline](../img/codesee-user-events-timeline.gif)
+
+### Filtering
+
+If you are overwhelmed by the information presented in the data flow or you want to remove some of the cruft in order to narrow down your focus, you can filter out functions by hovering over the ellipses and clicking **Exclude All - Filter out all instances**.
+
+<!-- <iframe src="https://codesee-docs.s3.amazonaws.com/08-+filtering.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe> -->
+![filtering functions](../img/cs-filter.gif)
+
+### ‍Callback Go to Execution 
+
+Understanding your code requires you to be able to follow the flow of execution from one function to the next and one file to the next. With CodeSee, you can instantly continue the flow of execution from a callback to where it’s executed with the click of a button. Using the **Go to Execution** menu that appears next to callback functions, you can jump to the points in the execution map where it was executed.
+
+![Callback go to execution](../img/codesee-go-to-execution.gif)
+
+### Runtime Data
+
+The column on the right shows all of the values of the variables, functions, objects etc when you made a recording.
+
+<iframe src="https://codesee-docs.s3.amazonaws.com/03-+Data.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe>
 
 ### Loops
 
@@ -21,15 +49,11 @@ If there is a loop, whether it’s an explicit loop like a for  loop or an impli
 
 <iframe src="https://codesee-docs.s3.amazonaws.com/02+-+Loops.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe>
 
-### Execution order
+### ‍CodeSee.log()
 
-The CodeSee Data Flow is laid out in code execution order meaning that it shows what order each function was called in regardless of what file the function is located in
+Add CodeSee.log() where you want more visibility, record your app, and your data flow will have links in the right side bar that jump you directly to where each CodeSee.log() occurred. It’s like having a print statement... everywhere!
 
-### Runtime data
-
-The column on the right shows all of the values of the variables, functions, objects etc when you made a recording.
-
-<iframe src="https://codesee-docs.s3.amazonaws.com/03-+Data.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe>
+![CodeSee.log()](../img/codesee-log.png)
 
 ### Expanders
 
@@ -37,7 +61,7 @@ Most dev tools are organized in files and folders. Normally to understand what�
 
 <iframe src="https://codesee-docs.s3.amazonaws.com/04+-+expanders.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe>
 
-### Call stack
+### Call Stack
 
 When you are diving in to a Data Flow, the current function that you are exploring sticks to the top so you always are aware of what line of code is part of which function. When that function is about to scroll off screen, we show you where the function ends. If you have nested functions, we show you the end of each function.
 
@@ -72,12 +96,14 @@ When you hover over the expression in the center column it highlights the expres
 <!-- <iframe src="https://codesee-docs.s3.amazonaws.com/07-highlights.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe> -->
 ![code highlights](../img/cs-highlights.gif)
 
-### Filtering
+### Data Search
 
-If you are overwhelmed by the information presented in the data flow or you want to remove some of the cruft in order to narrow down your focus, you can filter out functions by hovering over the ellipses and clicking Exclude All - Filter out all instances
+You can search not only your code, but also your runtime data: the value of every variable and expression. Use Search in the top bar of your data flow to easily find any data, whether it’s a buggy value, an error message, or a specific user’s ID. All results will show up, even if they’re deeply nested in the call stack.
 
-<!-- <iframe src="https://codesee-docs.s3.amazonaws.com/08-+filtering.mp4" style="width:100%; height:340px; allow="autoplay;"></iframe> -->
-![filtering functions](../img/cs-filter.gif)
+![Data search](../img/codesee-data-search.png)
 
+### React State Changes
 
+You can see each React state change (the value both before and after the change) directly next to your code in a data flow. You can examine not just the change but all of the code that led up to it. When you see the state change icon, click on “View” to see React state change details in the side effects panel. 
 
+![React State Changes](../img/codesee-react-state-changes.gif)

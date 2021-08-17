@@ -20,11 +20,11 @@ CodeSee creates a visual execution map called a **Data Flow** where you can expl
 
 You also get a summarized view of the code in the **Overview** tab. You can note your thoughts and connect commentary directly to the code in the Data Flow using a feature called **Stories**.
 
-CodeSee currently works with JavaScript and TypeScript web applications, and can record data flows on both the frontend and backend (experimental). By default, recordings from your app are hosted securely by CodeSee to be viewed from the web. See [CodeSee Local](https://docs.codesee.io/en/latest/local/local.html) for instructions on hosting your own CodeSee instance.
+CodeSee currently works with JavaScript and TypeScript web applications, and can record data flows on both the frontend and backend (experimental). By default, recordings from your app are hosted securely by CodeSee to be viewed from the web. See [CodeSee Local](/local/local.html) for instructions on hosting your own CodeSee instance.
 
 
 ## Next steps 
   
-* [Install CodeSee into a project](https://docs.codesee.io/en/latest/install/overview.html)
-* [Set up CodeSee locally](https://docs.codesee.io/en/latest/local/local.html)
+* [Install CodeSee into a project](/install/overview.html)
+* [Set up CodeSee locally](/local/local.html)
 

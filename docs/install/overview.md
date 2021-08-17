@@ -16,7 +16,7 @@ Following these instructions, you will:
 Follow the links below to set up CodeSee for your specific project environment:
 
 - [Create React App](./setup-cra.md)
-- [Typescript, but without Babel](./setup-typescript-without-babel.html)
+- [Typescript, but without Babel](./setup-typescript-without-babel.md)
 - [Next](./setup-next.md)
 - [Nuxt](./setup-nuxt.md)
 - [Storybook](./setup-storybook.md)

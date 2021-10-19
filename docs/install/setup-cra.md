@@ -12,7 +12,7 @@ You need to add [React App Rewired](https://github.com/timarney/react-app-rewire
 $ npm install react-app-rewired --save-dev
 ```
 
-## Create a `config-overrides-js` file in the root directory
+## Create a `config-overrides.js` file in the root directory
 
 The configuration differs slightly based on the version of Create React App you are running.
 

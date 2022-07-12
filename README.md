@@ -1,3 +1,5 @@
+> This repository is archived. We've moved our docs to a different platform.
+
 # CodeSee documentation
 
 This is the [documentation website](https://docs.codesee.io/en/latest/) repo for [CodeSee](https://www.codesee.io/), a tool to help you visually understand your codebase.
